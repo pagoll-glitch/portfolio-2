@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>[Your Name] — Developer Portfolio</title>
+  <meta name="description" content="Developer portfolio featuring PathFinder, a student career-discovery website.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Cormorant+Garamond:wght@500;700&family=Jost:wght@400;500&family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<div class="board">
+
+  <!-- NAV: edit the hrefs only if you rename a section id -->
+  <nav class="nav" aria-label="Main">
+    <a href="#about">About</a>
+    <a href="#skills">Education &amp; skills</a>
+    <a href="#pathfinder">PathFinder</a>
+    <a href="#journey">Learning</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- HERO: script name overlaps the giant word; photo sits between the letters -->
+  <header class="hero">
+    <svg class="roofs" viewBox="0 0 1200 120" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0 120V80l40-22 40 22v-30l30-20 30 20v28l50-34 50 34v-24h40l30-26 30 26h30v26l60-40 60 40v-20l40-24 40 24v34l50-30 50 30v-26l40-18 40 18v22l60-36 60 36v-16h40l30-22 30 22v30l50-28 50 28V120z"/>
+    </svg>
+    <p class="script name">[Your Name]’s</p>
+    <h1 class="giant" aria-label="Portfolio">PORT<span class="gap"></span>OLIO</h1>
+    <figure class="hero-photo"><img src="assets/photo-1-cafe.jpg" alt="Me smiling in a café, head tilted"></figure>
+    <p class="tagline">A developer’s notebook of projects, learning and the things I love.</p>
+    <p class="links"><a href="#" data-link="github">GitHub</a><a href="#" data-link="linkedin">LinkedIn</a><a href="mailto:your.email@example.com">Email</a></p>
+  </header>
+
+  <main class="cols">
+    <div class="col">
+
+      <section id="about" class="p dark reveal">
+        <h2>Who am I</h2>
+        <div class="split">
+          <div>
+            <p>Hi, I’m [Your Name], a [your age / year] developer from [city]. [One or two sentences about what draws you to building for the web.]</p>
+            <p class="facts"><span>Studying: [school / course]</span><span>Based in: [city, country]</span></p>
+          </div>
+          <figure class="tilt"><img src="assets/photo-2-temple.jpg" alt="Me with hands folded, standing before a carved stone wall hung with marigold garlands"></figure>
+        </div>
+        <p class="note">get to know me</p>
+      </section>
+
+      <section id="projects" class="p rose reveal">
+        <h2>My work includes</h2>
+        <div class="tiles">
+          <a class="tile feature" href="#pathfinder"><b>PathFinder</b><span>Student career-discovery website</span></a>
+          <a class="tile" href="#"><b>[Project two]</b><span>[One-line description]</span></a>
+          <a class="tile" href="#"><b>[Project three]</b><span>[One-line description]</span></a>
+        </div>
+      </section>
+
+      <section id="interests" class="p paper reveal">
+        <h2>Beyond the code</h2>
+        <p>[Interests: e.g. travel, photography, music — add yours.]</p>
+        <div class="phones">
+          <figure><img src="assets/photo-3-lights.jpg" alt="Laughing under string lights, adjusting sunglasses" style="object-position:50% 60%"></figure>
+          <figure><img src="assets/photo-4-mirror.jpg" alt="Mirror selfie in a graphic tee and jeans" style="object-position:55% 50%"></figure>
+          <figure><img src="assets/photo-5-evening.jpg" alt="Looking back over my shoulder at an evening festival, in a pink skirt" style="object-position:40% 30%"></figure>
+        </div>
+      </section>
+    </div>
+
+    <div class="col">
+
+      <section id="skills" class="p lav reveal">
+        <h2>Education &amp; skills</h2>
+        <div class="cert">
+          <p class="script">[Degree / school]</p>
+          <p>[Institution], [years]<br>[Subjects or focus]</p>
+        </div>
+        <ul class="pills">
+          <li>[Skill 1]</li><li>[Skill 2]</li><li>[Skill 3]</li><li>[Tool / framework]</li>
+        </ul>
+      </section>
+
+      <section id="pathfinder" class="p paper case reveal">
+        <h2>Case study</h2>
+        <div class="split2">
+          <div class="shot" role="img" aria-label="Placeholder for a PathFinder screenshot"><span>PathFinder</span><small>Add a screenshot: assets/pathfinder.jpg</small></div>
+          <div>
+            <p><strong>PathFinder</strong> is a website I built to help students discover careers.</p>
+            <p>[Who it’s for, what you built, which technologies you used, and what you learned. Only add facts you can stand behind.]</p>
+            <p class="links dark-links"><a href="#" data-link="pathfinder-live">View live site</a><a href="#" data-link="pathfinder-code">View code</a></p>
+          </div>
+        </div>
+      </section>
+
+      <section id="journey" class="p dark reveal">
+        <h2>Learning journey</h2>
+        <ol class="steps">
+          <li><b>[Year / month]</b> [What I started learning]</li>
+          <li><b>[Year / month]</b> [What I built or practised]</li>
+          <li><b>Now</b> [What I’m exploring next]</li>
+        </ol>
+      </section>
+    </div>
+  </main>
+
+  <footer id="contact" class="p rose contact reveal">
+    <h2>Say hello</h2>
+    <p class="links"><a href="mailto:your.email@example.com">your.email@example.com</a><a href="#" data-link="github">GitHub</a><a href="#" data-link="linkedin">LinkedIn</a></p>
+  </footer>
+</div>
+<script>
+/* Reveal panels as they scroll into view (skipped if the visitor prefers reduced motion). */
+const items = document.querySelectorAll('.reveal');
+if (!matchMedia('(prefers-reduced-motion: reduce)').matches && 'IntersectionObserver' in window) {
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: .12 });
+  items.forEach(i => io.observe(i));
+} else items.forEach(i => i.classList.add('in'));
+
+/* Add your real URLs here; links marked data-link will be filled in automatically. */
+const URLS = { github: '', linkedin: '', 'pathfinder-live': '', 'pathfinder-code': '' };
+document.querySelectorAll('[data-link]').forEach(a => { const u = URLS[a.dataset.link]; if (u) { a.href = u; a.target = '_blank'; a.rel = 'noopener'; } });
+</script>
+</body>
+</html>
