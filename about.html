@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me — Sara Kottawar | Still Learning. Always Building.</title>
+  <meta name="description"
+    content="Personal story, academic foundations at Newton School of Technology (2026–2030), curiosity constellation and learning focus of Sara Kottawar.">
+
+  <!-- Typography & Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Italiana&family=Jost:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Mrs+Saint+Delafield&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="board">
+
+    <!-- Magazine Top Ribbon -->
+    <aside class="edition-strip">
+      <span>N° 01 &bull; EDITORIAL MONOGRAPH</span>
+      <span>ABOUT ME &bull; PERSONAL STORY &amp; CURIOSITIES</span>
+      <span>NEWTON SCHOOL OF TECHNOLOGY &bull; 2026–2030</span>
+    </aside>
+
+    <!-- Top Navigation Bar -->
+    <nav class="nav-bar">
+      <a href="index.html" class="nav-brand" style="text-decoration:none;">
+        <span class="flower">✦</span> SARA KOTTAWAR
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active-link">About Me</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="journey.html">My Journey</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="theme-toggle-btn audio-btn" id="themeToggleBtn" title="Toggle Light / Dark Mode" aria-label="Toggle Light / Dark Mode">
+          <span class="theme-icon">☀️</span> Theme
+        </button>
+        <button class="audio-btn" id="parisChimeBtn" title="Play gentle Parisian harmonic chime">
+          <span>♫</span> Chime
+        </button>
+        <button class="copy-email-nav" data-copy="kottawarsara@gmail.com" title="Copy email address">
+          <span>✉</span> Copy Email
+        </button>
+      </div>
+    </nav>
+
+    <!-- Breadcrumb Bar -->
+    <div class="page-top-nav-bar">
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="crumb-sep">/</span>
+        <span class="crumb-current">About Me</span>
+      </nav>
+      <a href="index.html" class="back-link">&larr; Back to Editorial Home</a>
+    </div>
+
+    <!-- Hero Banner -->
+    <header class="case-hero-banner reveal">
+      <span class="case-badge-pill">Personal Story &bull; First-Year CS Student</span>
+      <h1 class="case-title">Still Learning. Always Building.<br><em>Dreaming Beyond Limits.</em></h1>
+      <p class="case-subtitle">
+        I am a first-year Computer Science and Artificial Intelligence student at <strong>Newton School of Technology</strong> (Class of 2026–2030).
+        Curious, exploratory, and fascinated by how pure code transforms into intuitive, beautiful products.
+      </p>
+    </header>
+
+    <!-- Main Two-Column Editorial Grid -->
+    <div class="layout-grid">
+
+      <!-- Left Column: Story, Philosophy & Curiosity Constellation -->
+      <div class="col col-left">
+
+        <!-- Story Panel -->
+        <article class="panel panel-rose reveal">
+          <div class="panel-head">
+            <h2 class="panel-title">The Student Journey</h2>
+            <span class="panel-label">Honest Beginnings &bull; Pune, India</span>
+          </div>
+
+          <div class="editorial-bio" style="font-size: 0.95rem; line-height: 1.7; color: var(--charcoal); display: flex; flex-direction: column; gap: 14px;">
+            <p>
+              I don't believe in pretending to have a decade of senior engineering credentials when I am just stepping onto this incredible journey.
+              I am a first-year undergraduate student, and right now, my superpower is curiosity: an insatiable hunger to understand how machines think,
+              how algorithms solve complex problems, and how thoughtful design can turn software into something that feels delightful to touch.
+            </p>
+            <p>
+              My journey began with simple Python scripts—watching logic statements execute in sequence, troubleshooting syntax errors, and experiencing that
+              electrifying <em>"it works!"</em> moment. Since then, I've spent weekends sketching wireframes, learning semantic HTML and modern CSS layouts,
+              collaborating with my peers at Newton School of Technology on hackathon solutions like <strong>UrbanPulse AI</strong>, and building prototypes
+              like <strong>PathFinder</strong>.
+            </p>
+            <p>
+              This website itself is an expression of who I am: someone who refuses to separate technical rigor from poetic beauty. Inspired by vintage Parisian
+              print magazines, café notebooks, and Pinterest typography, it reminds me every day that code can be as expressive and human as literature.
+            </p>
+          </div>
+
+          <div class="curated-pills" style="margin-top: 1.2rem;">
+            <span class="curated-pill">First-Year Undergrad</span>
+            <span class="curated-pill">Newton School of Tech ('30)</span>
+            <span class="curated-pill">Python &bull; Web Foundations</span>
+            <span class="curated-pill">AI Explorer</span>
+            <span class="curated-pill">Paris Aesthetic Admirer</span>
+          </div>
+        </article>
+
+        <!-- Interactive Curiosity Constellation -->
+        <section class="panel reveal">
+          <div class="panel-head">
+            <h2 class="panel-title">Curiosity Constellation</h2>
+            <span class="panel-label">Interactive Node Map &bull; Click to Explore</span>
+          </div>
+
+          <div class="constellation-wrapper">
+            <div class="constellation-intro">
+              <h3>What Captivates My Mind</h3>
+              <p>Click any node below to discover how I view this discipline and what I am currently tinkering with:</p>
+            </div>
+
+            <!-- Constellation Node Buttons -->
+            <div class="constellation-cluster">
+              <button class="constellation-node active" onclick="selectCuriosityNode('web')">
+                <span>🎨</span> Creative Web
+              </button>
+              <button class="constellation-node" onclick="selectCuriosityNode('ai')">
+                <span>🧠</span> Artificial Intelligence
+              </button>
+              <button class="constellation-node" onclick="selectCuriosityNode('systems')">
+                <span>⚡</span> Logic &amp; Algorithms
+              </button>
+              <button class="constellation-node" onclick="selectCuriosityNode('product')">
+                <span>🧭</span> Product Discovery
+              </button>
+              <button class="constellation-node" onclick="selectCuriosityNode('paris')">
+                <span>🥐</span> Parisian Art Direction
+              </button>
+            </div>
+
+            <!-- Dynamic Detail Card -->
+            <div class="curiosity-card" id="curiosityDisplayCard">
+              <div class="curiosity-card-head">
+                <span class="curiosity-tag" id="curiosityTag">Domain 01 / Web</span>
+                <span style="font-size: 0.8rem; color: var(--champagne-gold);">● Active Focus</span>
+              </div>
+              <h4 id="curiosityTitle">Creative Frontend &amp; Editorial Web Design</h4>
+              <p id="curiosityDesc">
+                I believe web browsers are the modern world's printing press. Rather than standard generic templates,
+                I love treating webpages like living editorial spreads—pairing asymmetric magazine grids, delicate borders,
+                and typographic restraint with responsive, lightweight CSS and accessible semantic structure.
+              </p>
+              <div class="curiosity-topics" id="curiosityTopics">
+                <span class="curiosity-topic-pill">CSS Grid &amp; Flexbox</span>
+                <span class="curiosity-topic-pill">Responsive Typography</span>
+                <span class="curiosity-topic-pill">Vanilla JavaScript</span>
+                <span class="curiosity-topic-pill">WCAG Accessibility</span>
+                <span class="curiosity-topic-pill">Web Audio API</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Currently Exploring Panel -->
+        <section class="panel panel-lav reveal">
+          <div class="panel-head">
+            <h2 class="panel-title">Currently Exploring</h2>
+            <span class="panel-label">Winter &bull; Spring 2026 Field Notebook</span>
+          </div>
+
+          <div class="exploring-grid">
+            <div class="exploring-item">
+              <span class="exploring-item-badge">Core Foundations</span>
+              <h4>Algorithmic Logic</h4>
+              <p>Deepening understanding of problem decomposition, recursion, sorting concepts, and mathematical logic in Python.</p>
+            </div>
+
+            <div class="exploring-item">
+              <span class="exploring-item-badge">Computer Vision</span>
+              <h4>YOLOv8 Edge Models</h4>
+              <p>Investigating how lightweight vision models identify real-world road anomalies from moving bus video feeds (SIH 2026).</p>
+            </div>
+
+            <div class="exploring-item">
+              <span class="exploring-item-badge">Design Systems</span>
+              <h4>Editorial Micro-UI</h4>
+              <p>Studying vintage typography, Swiss poster design, and Pinterest art direction translated into clean, responsive CSS code.</p>
+            </div>
+
+            <div class="exploring-item">
+              <span class="exploring-item-badge">Tooling</span>
+              <h4>Git &amp; Open Source</h4>
+              <p>Adopting clean commit habits, feature branching, pull request reviews, and collaborating on student project repositories.</p>
+            </div>
+          </div>
+        </section>
+
+      </div>
+
+      <!-- Right Column: Campus Life, Qualifications & Scrapbook -->
+      <div class="col col-right">
+
+        <!-- Qualifications & Academic Foundations -->
+        <section id="qualifications" class="panel panel-lav reveal">
+          <div class="panel-head">
+            <h2 class="panel-title">Academic Anchor</h2>
+            <span class="panel-label">Newton School of Technology</span>
+          </div>
+
+          <div class="diploma-card" style="margin-bottom: 1rem;">
+            <div class="diploma-crest">🏛️</div>
+            <p class="diploma-title">Academic Scholar</p>
+            <h3 class="diploma-uni">Newton School of Technology</h3>
+            <p class="diploma-degree">Bachelor of Technology (B.Tech)<br>Computer Science &amp; Artificial Intelligence</p>
+            <span class="diploma-year">2026 – 2030 &bull; Class of 2030 &bull; Year 1</span>
+          </div>
+
+          <!-- Mirror Campus Photo -->
+          <figure class="qual-photo" style="margin-bottom: 1rem;">
+            <img src="assets/photo-4-mirror.jpg" alt="Sara mirror selfie with casual chic tote on campus" data-zoom>
+            <span class="qual-photo-tag">Newton School of Tech Campus</span>
+          </figure>
+
+          <div class="cert-stack">
+            <div class="cert-pill">
+              <b>Python Programming Foundations</b>
+              <span>Logic syntax, data structures, functional thinking</span>
+            </div>
+            <div class="cert-pill">
+              <b>Semantic Web Architecture</b>
+              <span>HTML5, CSS layout systems, responsive web</span>
+            </div>
+            <div class="cert-pill">
+              <b>Team Rubix &bull; SIH 2026</b>
+              <span>Smart India Hackathon problem solver (PS 26124)</span>
+            </div>
+            <div class="cert-pill">
+              <b>Curiosity-Driven Problem Solving</b>
+              <span>First-principles reasoning and continuous tinkering</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- Polaroid Scrapbook Card -->
+        <aside class="panel reveal">
+          <div class="panel-head">
+            <h2 class="panel-title">Vignettes</h2>
+            <span class="panel-label">Moments Beyond The Screen</span>
+          </div>
+
+          <div class="scrapbook-grid" style="grid-template-columns: 1fr 1fr; gap: 10px;">
+            <div class="scrap-tile">
+              <img src="assets/photo-2-temple.jpg" alt="Sara in traditional white attire at temple" data-zoom>
+            </div>
+            <div class="scrap-tile">
+              <img src="assets/photo-3-lights.jpg" alt="Sara laughing under evening lights" data-zoom>
+            </div>
+            <div class="scrap-tile scrap-text-tile" style="grid-column: span 2;">
+              <p class="script-quote">« Tout commence par une idée. »</p>
+              <small style="font-size: 0.7rem; color: var(--dusty-rose); display: block; margin-top: 4px;">
+                Everything starts with a simple idea.
+              </small>
+            </div>
+          </div>
+        </aside>
+
+        <!-- Direct Next Page Pill Link -->
+        <div class="project-nav-footer">
+          <a href="index.html" class="project-nav-btn">&larr; Return Home</a>
+          <a href="projects.html" class="project-nav-btn">Explore Projects &rarr;</a>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Carte Postale Footer -->
+    <footer id="contact" class="postcard-footer reveal">
+      <div class="postcard-layout">
+        <div class="postcard-left">
+          <h2>Let's Connect</h2>
+          <p class="postcard-lead">
+            I am always delighted to chat with fellow students, engineers, and mentors.
+            Whether it's discussing learning resources or collaborating on open-source ideas, reach out anytime!
+          </p>
+          <p class="postcard-meta-note">
+            Pune, Maharashtra &bull; Newton School of Technology (2026–2030)
+          </p>
+        </div>
+
+        <div class="postcard-right">
+          <div class="postcard-actions">
+            <a href="mailto:kottawarsara@gmail.com" class="postcard-email-link">kottawarsara@gmail.com</a>
+            <button class="copy-email-nav" data-copy="kottawarsara@gmail.com">Copy Email Address</button>
+          </div>
+          <div class="postcard-socials">
+            <a href="https://github.com/pagoll-glitch" target="_blank" rel="noopener">GitHub ↗</a>
+            <a href="contact.html">Send A Letter ↗</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Global Lightbox Modal -->
+  <div class="lightbox-overlay" id="lightboxOverlay" aria-modal="true" role="dialog" aria-hidden="true">
+    <div class="lightbox-container">
+      <button class="lightbox-close-btn" id="lightboxClose" aria-label="Close image">&times;</button>
+      <img src="" alt="" class="lightbox-img" id="lightboxImg">
+      <p class="lightbox-caption" id="lightboxCaption"></p>
+    </div>
+  </div>
+
+  <!-- Portfolio Core Engine -->
+  <script src="main.js"></script>
+</body>
+
+</html>
+

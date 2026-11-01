@@ -1,127 +1,964 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>[Your Name] — Developer Portfolio</title>
-  <meta name="description" content="Developer portfolio featuring PathFinder, a student career-discovery website.">
+  <title>Sara Kottawar — Developer Portfolio &amp; Parisian Editorial Notebook</title>
+  <meta name="description"
+    content="Personal developer portfolio of Sara Kottawar, first-year Computer Science student at Newton School of Technology (2026–2030). Still learning. Always building. Dreaming beyond limits.">
+
+  <!-- Google Fonts: Editorial Serifs, Clean Sans & Parisian Calligraphy -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Cormorant+Garamond:wght@500;700&family=Jost:wght@400;500&family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Italiana&family=Jost:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Mrs+Saint+Delafield&display=swap"
+    rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
   <script>document.documentElement.classList.add('js')</script>
 </head>
+
 <body>
-<div class="board">
 
-  <!-- NAV: edit the hrefs only if you rename a section id -->
-  <nav class="nav" aria-label="Main">
-    <a href="#about">About</a>
-    <a href="#skills">Education &amp; skills</a>
-    <a href="#pathfinder">PathFinder</a>
-    <a href="#journey">Learning</a>
-    <a href="#contact">Contact</a>
-  </nav>
+  <div class="board">
 
-  <!-- HERO: script name overlaps the giant word; photo sits between the letters -->
-  <header class="hero">
-    <svg class="roofs" viewBox="0 0 1200 120" preserveAspectRatio="none" aria-hidden="true">
-      <path d="M0 120V80l40-22 40 22v-30l30-20 30 20v28l50-34 50 34v-24h40l30-26 30 26h30v26l60-40 60 40v-20l40-24 40 24v34l50-30 50 30v-26l40-18 40 18v22l60-36 60 36v-16h40l30-22 30 22v30l50-28 50 28V120z"/>
-    </svg>
-    <p class="script name">[Your Name]’s</p>
-    <h1 class="giant" aria-label="Portfolio">PORT<span class="gap"></span>OLIO</h1>
-    <figure class="hero-photo"><img src="assets/photo-1-cafe.jpg" alt="Me smiling in a café, head tilted"></figure>
-    <p class="tagline">A developer’s notebook of projects, learning and the things I love.</p>
-    <p class="links"><a href="#" data-link="github">GitHub</a><a href="#" data-link="linkedin">LinkedIn</a><a href="mailto:your.email@example.com">Email</a></p>
-  </header>
-
-  <main class="cols">
-    <div class="col">
-
-      <section id="about" class="p dark reveal">
-        <h2>Who am I</h2>
-        <div class="split">
-          <div>
-            <p>Hi, I’m [Your Name], a [your age / year] developer from [city]. [One or two sentences about what draws you to building for the web.]</p>
-            <p class="facts"><span>Studying: [school / course]</span><span>Based in: [city, country]</span></p>
-          </div>
-          <figure class="tilt"><img src="assets/photo-2-temple.jpg" alt="Me with hands folded, standing before a carved stone wall hung with marigold garlands"></figure>
-        </div>
-        <p class="note">get to know me</p>
-      </section>
-
-      <section id="projects" class="p rose reveal">
-        <h2>My work includes</h2>
-        <div class="tiles">
-          <a class="tile feature" href="#pathfinder"><b>PathFinder</b><span>Student career-discovery website</span></a>
-          <a class="tile" href="#"><b>[Project two]</b><span>[One-line description]</span></a>
-          <a class="tile" href="#"><b>[Project three]</b><span>[One-line description]</span></a>
-        </div>
-      </section>
-
-      <section id="interests" class="p paper reveal">
-        <h2>Beyond the code</h2>
-        <p>[Interests: e.g. travel, photography, music — add yours.]</p>
-        <div class="phones">
-          <figure><img src="assets/photo-3-lights.jpg" alt="Laughing under string lights, adjusting sunglasses" style="object-position:50% 60%"></figure>
-          <figure><img src="assets/photo-4-mirror.jpg" alt="Mirror selfie in a graphic tee and jeans" style="object-position:55% 50%"></figure>
-          <figure><img src="assets/photo-5-evening.jpg" alt="Looking back over my shoulder at an evening festival, in a pink skirt" style="object-position:40% 30%"></figure>
-        </div>
-      </section>
+    <!-- TOP RIBBON: Editorial Masthead Header -->
+    <div class="edition-strip">
+      <span>Édition N° 01 • Automne / Hiver 2026 • Pune &amp; Paris</span>
+      <span class="tagline-mini">“Still learning. Always building. Dreaming beyond limits.”</span>
+      <span>Sara Kottawar • B.Tech CSE '30</span>
     </div>
 
-    <div class="col">
+    <!-- NAVIGATION -->
+    <nav class="nav-bar" aria-label="Main Navigation">
+      <div class="nav-brand">
+        <span class="flower">✦</span> SARA KOTTAWAR
+      </div>
 
-      <section id="skills" class="p lav reveal">
-        <h2>Education &amp; skills</h2>
-        <div class="cert">
-          <p class="script">[Degree / school]</p>
-          <p>[Institution], [years]<br>[Subjects or focus]</p>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active-link">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="journey.html">My Journey</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="theme-toggle-btn audio-btn" id="themeToggleBtn" title="Toggle Light / Dark Mode" aria-label="Toggle Light / Dark Mode">
+          <span class="theme-icon">☀️</span> Theme
+        </button>
+        <button class="audio-btn" id="parisChimeBtn" title="Play gentle Parisian harmonic chime">
+          <span>♫</span> Chime
+        </button>
+        <button class="copy-email-nav" data-copy="kottawarsara@gmail.com" title="Copy email address">
+          <span>✉</span> Copy Email
+        </button>
+      </div>
+    </nav>
+
+    <!-- ========================================================================
+       HERO MASTHEAD: Oversized Pinterest Magazine Composition
+       ======================================================================== -->
+    <header class="hero">
+      <!-- Subtle Parisian Rooftop Skyline Silhouette -->
+      <svg class="hero-skyline" viewBox="0 0 1200 120" preserveAspectRatio="none" aria-hidden="true">
+        <path
+          d="M0 120V80l40-22 40 22v-30l30-20 30 20v28l50-34 50 34v-24h40l30-26 30 26h30v26l60-40 60 40v-20l40-24 40 24v34l50-30 50 30v-26l40-18 40 18v22l60-36 60 36v-16h40l30-22 30 22v30l50-28 50 28V120z" />
+      </svg>
+
+      <!-- Handwritten Signature Script Overlap -->
+      <p class="hero-script-name">Sara's</p>
+
+      <!-- Giant Typography: PORT [Cameo] FOLIO -->
+      <div class="masthead-title" aria-label="Portfolio">
+        <span class="masthead-word-left">PORT</span>
+        <span class="masthead-word-right">FOLIO</span>
+      </div>
+
+      <!-- Center Portrait Cameo Cutout -->
+      <figure class="hero-cameo">
+        <div class="hero-cameo-frame">
+          <img src="assets/photo-1-cafe.jpg" alt="Sara smiling warmly in a café, head tilted with natural light">
         </div>
-        <ul class="pills">
-          <li>[Skill 1]</li><li>[Skill 2]</li><li>[Skill 3]</li><li>[Tool / framework]</li>
-        </ul>
-      </section>
+      </figure>
 
-      <section id="pathfinder" class="p paper case reveal">
-        <h2>Case study</h2>
-        <div class="split2">
-          <div class="shot" role="img" aria-label="Placeholder for a PathFinder screenshot"><span>PathFinder</span><small>Add a screenshot: assets/pathfinder.jpg</small></div>
-          <div>
-            <p><strong>PathFinder</strong> is a website I built to help students discover careers.</p>
-            <p>[Who it’s for, what you built, which technologies you used, and what you learned. Only add facts you can stand behind.]</p>
-            <p class="links dark-links"><a href="#" data-link="pathfinder-live">View live site</a><a href="#" data-link="pathfinder-code">View code</a></p>
+      <!-- Decorative Parisian Postmark Badge -->
+      <div class="hero-stamp-badge">
+        <span>R.F. • PARIS / PUNE</span>
+        <small>N° 2026 • CSE</small>
+      </div>
+
+      <!-- Hero Bottom Content: Narrative & Pill Actions -->
+      <div class="hero-footer-content">
+        <div class="hero-positioning">
+          <h2 class="quote-lead">“Still learning. Always building. Dreaming beyond limits.”</h2>
+          <p>A personal notebook of software engineering, artificial intelligence experiments, and creative web craft by
+            a first-year Computer Science student at Newton School of Technology (2026–2030).</p>
+        </div>
+
+        <div class="hero-pills">
+          <div class="pills-group">
+            <a href="https://github.com/pagoll-glitch" target="_blank" rel="noopener" class="pill-link">GitHub ↗</a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener" class="pill-link">LinkedIn ↗</a>
+            <a href="#pathfinder" class="pill-link gold-accent">Explore Case Study ↓</a>
+            <a href="#contact" class="pill-link">Say Bonjour ✉</a>
           </div>
         </div>
-      </section>
+      </div>
+    </header>
 
-      <section id="journey" class="p dark reveal">
-        <h2>Learning journey</h2>
-        <ol class="steps">
-          <li><b>[Year / month]</b> [What I started learning]</li>
-          <li><b>[Year / month]</b> [What I built or practised]</li>
-          <li><b>Now</b> [What I’m exploring next]</li>
-        </ol>
-      </section>
+    <!-- ========================================================================
+       THE ASYMMETRICAL EDITORIAL GRID
+       ======================================================================== -->
+    <main class="cols">
+
+      <!-- ----------------------------------------------------------------------
+         LEFT COLUMN
+         ---------------------------------------------------------------------- -->
+      <div class="col col-left">
+
+        <!-- 1. WHO AM I PANEL -->
+        <section id="about" class="panel panel-dark reveal">
+          <div class="panel-head">
+            <h2 class="panel-title">Who Am I</h2>
+            <span class="panel-label">Volume 01 • Story &amp; Origins</span>
+          </div>
+
+          <div class="whoami-split">
+            <div class="whoami-bio">
+              <p>Hi, I’m <strong>Sara Kottawar</strong>, a first-year Computer Science student at <strong>Newton School of
+                  Technology</strong> in Pune, India (Class of 2026–2030). I am standing right at the beginning of my engineering
+                journey—deeply curious about how logic becomes software and how early concepts grow into products that
+                genuinely help people.</p>
+
+              <p>I don’t pretend to have years of senior engineering experience. Instead, I embrace being in beta:
+                reading documentation, building prototypes from scratch, practicing computational logic, and exploring
+                emerging artificial intelligence tools with open eyes.</p>
+
+              <!-- Key Fast Facts -->
+              <div class="whoami-stats">
+                <div class="stat-item">
+                  <span class="stat-num">01<sup>st</sup></span>
+                  <span class="stat-desc">Year (2026–2030)</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-num">Day 01</span>
+                  <span class="stat-desc">Beginner Explorer</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-num">03+</span>
+                  <span class="stat-desc">Active Prototypes</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-num">100%</span>
+                  <span class="stat-desc">Curiosity &amp; Drive</span>
+                </div>
+              </div>
+
+              <!-- Tech Exploration Pills -->
+              <ul class="tech-pill-list">
+                <li>Python</li>
+                <li>C++</li>
+                <li>JavaScript</li>
+                <li>HTML5 &amp; CSS3</li>
+                <li>Git &amp; GitHub</li>
+                <li>Generative AI</li>
+                <li>Figma</li>
+                <li>Newton School</li>
+              </ul>
+            </div>
+
+            <!-- Polaroid Photo Frame -->
+            <figure class="polaroid-tilt">
+              <div class="polaroid-img">
+                <img src="assets/photo-2-temple.jpg"
+                  alt="Sara standing with folded hands before a carved golden temple wall hung with marigold garlands">
+              </div>
+              <p class="polaroid-script-note">get to know me ✦</p>
+            </figure>
+          </div>
+        </section>
+
+        <!-- 2. MY WORK INCLUDES: 6-CARD MAGAZINE GRID -->
+        <section id="includes" class="panel panel-rose reveal">
+          <div class="panel-head">
+            <h2 class="panel-title">My Work Includes</h2>
+            <span class="panel-label">Six Areas of Active Exploration</span>
+          </div>
+
+          <p style="font-size: 0.92rem; color: #3d3444; margin-bottom: 0.8rem;">
+            The core disciplines I explore every week as an aspiring software engineer:
+          </p>
+
+          <div class="work-grid">
+            <!-- Card 1 -->
+            <div class="work-card">
+              <div>
+                <span class="work-card-num">01 / ENGINEERING</span>
+                <h3>Software Engineering</h3>
+                <p>Writing clean, modular code in Python &amp; C++. Grasping fundamental control flow, functions, OOP,
+                  and software debugging practices.</p>
+              </div>
+              <span class="work-card-tag">Python &bull; C++ &bull; Logic</span>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="work-card">
+              <div>
+                <span class="work-card-num">02 / INTELLIGENCE</span>
+                <h3>Artificial Intelligence</h3>
+                <p>Investigating Large Language Models, prompt architectures, agentic workflows, and how AI tooling
+                  enhances developer productivity.</p>
+              </div>
+              <span class="work-card-tag">LLMs &bull; Prompting &bull; Tools</span>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="work-card">
+              <div>
+                <span class="work-card-num">03 / INTERFACE</span>
+                <h3>Creative Web Design</h3>
+                <p>Merging Parisian editorial print art direction with modern CSS grids, semantic markup, and expressive
+                  typography.</p>
+              </div>
+              <span class="work-card-tag">Editorial UI &bull; Micro-interactions</span>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="work-card">
+              <div>
+                <span class="work-card-num">04 / PRODUCT</span>
+                <h3>Product Development</h3>
+                <p>Listening to student challenges, wireframing intuitive flows, and bringing early concepts into live,
+                  testable digital prototypes.</p>
+              </div>
+              <span class="work-card-tag">UX Flow &bull; Wireframes &bull; Users</span>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="work-card">
+              <div>
+                <span class="work-card-num">05 / VENTURE</span>
+                <h3>Startups &amp; Growth</h3>
+                <p>Analyzing disruptive tech companies, product-led loops, lean experimentation, and how small agile
+                  teams ship impactful software.</p>
+              </div>
+              <span class="work-card-tag">Startups &bull; Innovation</span>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="work-card">
+              <div>
+                <span class="work-card-num">06 / FOUNDATIONS</span>
+                <h3>Logic &amp; Problem Solving</h3>
+                <p>Starting from scratch with computational thinking, logic building, and preparing to dive into fundamental Data Structures.</p>
+              </div>
+              <span class="work-card-tag">Logic &bull; Foundations</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- 3. THE LAB & EXPERIMENTS: 4 PHONE MOCKUPS (VIDEOGRAPHY in reference) -->
+        <section id="lab" class="panel panel-lav reveal">
+          <div class="panel-head">
+            <h2 class="panel-title">The Lab</h2>
+            <div style="display: flex; align-items: center; gap: 12px;">
+              <span class="panel-label">Prototypes &amp; Visual Experiments</span>
+              <a href="projects.html" class="back-link" style="font-size: 0.72rem; padding: 2px 8px;">All Projects &rarr;</a>
+            </div>
+          </div>
+
+          <p class="lab-statement">
+            Through rapid prototyping and intentional design, I turn raw curiosities into interactive web experiences,
+            mobile mockups, and software components.
+          </p>
+
+          <div class="phones-row">
+            <!-- Phone 1: PathFinder -->
+            <div class="phone-mockup">
+              <div class="phone-bezel">
+                <div class="phone-notch"></div>
+                <div class="phone-screen screen-theme-1">
+                  <div class="screen-header-bar">
+                    <span>9:41</span>
+                    <span>PathFinder</span>
+                  </div>
+                  <div class="screen-body">
+                    <span class="screen-icon">🧭</span>
+                    <div class="screen-app-title">Career Match</div>
+                    <div class="screen-app-desc">Interactive quiz for students discovering tech paths.</div>
+                  </div>
+                  <a href="project-pathfinder.html" class="screen-footer-btn" style="text-decoration: none; text-align: center; display: block;">Case Study</a>
+                </div>
+              </div>
+              <div class="phone-info">
+                <h4>PathFinder</h4>
+                <p>Career Discovery Platform</p>
+              </div>
+            </div>
+
+            <!-- Phone 2: Dream Vacation -->
+            <div class="phone-mockup">
+              <div class="phone-bezel">
+                <div class="phone-notch"></div>
+                <div class="phone-screen screen-theme-2">
+                  <div class="screen-header-bar">
+                    <span>9:41</span>
+                    <span>Paris Guide</span>
+                  </div>
+                  <div class="screen-body">
+                    <span class="screen-icon">🥐</span>
+                    <div class="screen-app-title">Dream Vacation</div>
+                    <div class="screen-app-desc">Editorial Parisian travel guide, monuments &amp; cuisine.</div>
+                  </div>
+                  <a href="project-dream-vacation.html" class="screen-footer-btn" style="text-decoration: none; text-align: center; display: block;">View Guide</a>
+                </div>
+              </div>
+              <div class="phone-info">
+                <h4>Dream Vacation</h4>
+                <p>Parisian Travel Site</p>
+              </div>
+            </div>
+
+            <!-- Phone 3: UrbanPulse AI (SIH 2026) -->
+            <div class="phone-mockup">
+              <div class="phone-bezel">
+                <div class="phone-notch"></div>
+                <div class="phone-screen screen-theme-3">
+                  <div class="screen-header-bar">
+                    <span>9:41</span>
+                    <span>UrbanPulse</span>
+                  </div>
+                  <div class="screen-body">
+                    <span class="screen-icon">🚌</span>
+                    <div class="screen-app-title">UrbanPulse AI</div>
+                    <div class="screen-app-desc">SIH 2026 bus road monitoring &amp; YOLOv8 defect detection.</div>
+                  </div>
+                  <a href="project-urbanpulse.html" class="screen-footer-btn" style="text-decoration: none; text-align: center; display: block;">SIH Case</a>
+                </div>
+              </div>
+              <div class="phone-info">
+                <h4>UrbanPulse AI</h4>
+                <p>SIH 2026 &bull; Team Rubix</p>
+              </div>
+            </div>
+
+            <!-- Phone 4: StudyPulse -->
+            <div class="phone-mockup">
+              <div class="phone-bezel">
+                <div class="phone-notch"></div>
+                <div class="phone-screen screen-theme-4">
+                  <div class="screen-header-bar">
+                    <span>9:41</span>
+                    <span>StudyPulse</span>
+                  </div>
+                  <div class="screen-body">
+                    <span class="screen-icon">⏳</span>
+                    <div class="screen-app-title">Campus Pulse</div>
+                    <div class="screen-app-desc">Pomodoro focus cycles &amp; academic assignment tracker.</div>
+                  </div>
+                  <span class="screen-footer-btn">Concept</span>
+                </div>
+              </div>
+              <div class="phone-info">
+                <h4>StudyPulse</h4>
+                <p>Student Focus Utility</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+
+      <!-- ----------------------------------------------------------------------
+         RIGHT COLUMN
+         ---------------------------------------------------------------------- -->
+      <div class="col col-right">
+
+        <!-- 1. QUALIFICATIONS & FOUNDATIONS PANEL -->
+        <section id="qualifications" class="panel panel-lav reveal">
+          <div class="panel-head">
+            <h2 class="panel-title">Qualifications</h2>
+            <span class="panel-label">Academic Foundations &amp; Milestones</span>
+          </div>
+
+          <div class="qual-layout">
+            <!-- Diploma Card -->
+            <div class="diploma-card">
+              <div class="diploma-crest">🏛️</div>
+              <p class="diploma-title">Academic Scholar</p>
+              <h3 class="diploma-uni">Newton School of Technology</h3>
+              <p class="diploma-degree">Bachelor of Technology (B.Tech)<br>Computer Science &amp; AI</p>
+              <span class="diploma-year">2026 – 2030 &bull; First Year</span>
+            </div>
+
+            <!-- Mirror Photo -->
+            <figure class="qual-photo">
+              <img src="assets/photo-4-mirror.jpg" alt="Sara mirror selfie in a casual chic outfit with tote bag">
+              <span class="qual-photo-tag">Campus Life</span>
+            </figure>
+
+            <!-- Certifications Stack -->
+            <div class="cert-stack">
+              <div class="cert-pill">
+                <b>Python Programming</b>
+                <span>Logic, functions, OOP, algorithmic thinking</span>
+              </div>
+              <div class="cert-pill">
+                <b>Full-Stack Web Foundations</b>
+                <span>Semantic HTML5, CSS Grid, Vanilla JS</span>
+              </div>
+              <div class="cert-pill">
+                <b>Logic &amp; CS Foundations</b>
+                <span>Computational thinking, flowcharts, logic building</span>
+              </div>
+              <div class="cert-pill">
+                <b>Git &amp; GitHub Versioning</b>
+                <span>Branching, remotes, pull requests, CI</span>
+              </div>
+              <div class="cert-pill">
+                <b>Prompt Engineering &amp; AI</b>
+                <span>LLM reasoning, context engineering, tooling</span>
+              </div>
+              <div class="cert-pill">
+                <b>Newton School of Technology</b>
+                <span>Hands-on coding playground &amp; peer learning</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 2. CASE STUDY: PATHFINDER (Deep Editorial Multi-Block) -->
+        <section id="pathfinder" class="panel reveal">
+          <div class="panel-head">
+            <h2 class="panel-title">Case Study</h2>
+            <div style="display: flex; align-items: center; gap: 12px;">
+              <span class="panel-label">Flagship Project &bull; PathFinder</span>
+              <a href="project-pathfinder.html" class="back-link" style="font-size: 0.72rem; padding: 2px 8px;">Case Study &rarr;</a>
+            </div>
+          </div>
+
+          <p class="case-study-hero-text">
+            I noticed high school seniors and college freshmen frequently experience career paralysis—overwhelmed by
+            fragmented advice and unsure which tech domain aligns with their natural thinking. I designed and coded
+            <strong>PathFinder</strong> to turn ambiguity into clear, actionable roadmaps.
+          </p>
+
+          <!-- Part 01: Desktop Browser Mockup -->
+          <div class="case-block">
+            <div class="case-block-head">
+              <h3>Website 01 &bull; The Web Portal</h3>
+              <span>Live Prototype Preview</span>
+            </div>
+
+            <div class="browser-split">
+              <div class="browser-desc">
+                <p>A lightweight, zero-dependency web application engineered with semantic HTML, CSS Grid architecture,
+                  and vanilla JavaScript.</p>
+                <p>Includes an interactive role discovery quiz, milestone checklists for each engineering path, and
+                  curated free learning resources.</p>
+                <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px;">
+                  <button class="demo-trigger-btn" onclick="openDemoModal()">✦ Launch Interactive Demo</button>
+                  <a href="project-pathfinder.html" class="pill-link" style="font-size: 0.75rem; padding: 6px 12px; background: var(--midnight-plum); color: var(--ivory); border-color: var(--midnight-plum);">Full Case Study &rarr;</a>
+                  <a href="https://github.com/pagoll-glitch" target="_blank" rel="noopener" class="pill-link"
+                    style="font-size: 0.75rem; padding: 6px 12px;">View Code ↗</a>
+                </div>
+              </div>
+
+              <!-- Desktop Browser Frame -->
+              <div class="browser-mockup">
+                <div class="browser-topbar">
+                  <div class="browser-dots">
+                    <span class="dot-red"></span>
+                    <span class="dot-yellow"></span>
+                    <span class="dot-green"></span>
+                  </div>
+                  <div class="browser-address">https://pathfinder.sara.dev</div>
+                </div>
+
+                <div class="browser-canvas">
+                  <div class="browser-canvas-header">
+                    <b>PathFinder &bull; Tech Career Navigator</b>
+                    <span>v1.0 Beta</span>
+                  </div>
+
+                  <div class="browser-canvas-body">
+                    <div class="quiz-teaser-box">
+                      <b>Sample Question:</b>
+                      <span>When approaching a problem, what energizes you most?</span>
+                      <div class="quiz-mini-options">
+                        <div class="quiz-option-tag">System Logic &amp; Code</div>
+                        <div class="quiz-option-tag">Visuals &amp; User UI</div>
+                        <div class="quiz-option-tag">Data &amp; Machine Models</div>
+                        <div class="quiz-option-tag">Strategy &amp; Products</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="browser-canvas-footer">
+                    <span style="font-size: 0.7rem; color: #666;">Interactive Discovery Engine</span>
+                    <button class="demo-trigger-btn" onclick="openDemoModal()">Take Quiz</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Part 02: Parisian Scrapbook Moodboard ("Curated Feed 02") -->
+          <div class="case-block">
+            <div class="case-block-head">
+              <h3>Curated Feed 02 &bull; Parisian Scrapbook</h3>
+              <span>Beyond The Code</span>
+            </div>
+
+            <p style="font-size: 0.86rem; color: #554f5c; margin-bottom: 0.8rem;">
+              A personal moodboard blending student life at Newton School of Technology, late-night code exploration, and the romantic
+              editorial beauty of Paris:
+            </p>
+
+            <div class="scrapbook-grid">
+              <!-- 1. Photo Lights -->
+              <div class="scrap-tile">
+                <img src="assets/photo-3-lights.jpg" alt="Sara laughing joyfully under string lights with sunglasses">
+              </div>
+
+              <!-- 2. Paris Orsay -->
+              <div class="scrap-tile">
+                <img src="assets/paris/orsay.jpg" alt="Musée d'Orsay Paris architecture">
+              </div>
+
+              <!-- 3. Postmark Stamp -->
+              <div class="scrap-tile scrap-stamp-tile">
+                <div class="stamp-inner">
+                  <span>RÉPUBLIQUE FRANÇAISE</span>
+                  <small>POSTES 2026</small>
+                </div>
+              </div>
+
+              <!-- 4. Photo Evening Festival -->
+              <div class="scrap-tile">
+                <img src="assets/photo-5-evening.jpg"
+                  alt="Sara looking back with a bright smile at a campus evening festival">
+              </div>
+
+              <!-- 5. Code Tile -->
+              <div class="scrap-tile scrap-code-tile">
+                <div><span class="code-keyword">def</span> <span class="code-func">solve</span>(n):</div>
+                <div>&nbsp;&nbsp;ans = []</div>
+                <div>&nbsp;&nbsp;<span class="code-keyword">while</span> n &gt; 0:</div>
+                <div>&nbsp;&nbsp;&nbsp;&nbsp;ans.append(n % 10)</div>
+                <div>&nbsp;&nbsp;&nbsp;&nbsp;n //= 10</div>
+                <div>&nbsp;&nbsp;<span class="code-keyword">return</span> ans</div>
+              </div>
+
+              <!-- 6. Paris Seine -->
+              <div class="scrap-tile">
+                <img src="assets/paris/seine.jpg" alt="Seine river Paris at golden hour">
+              </div>
+
+              <!-- 7. Handwritten Note -->
+              <div class="scrap-tile scrap-text-tile">
+                <p class="script-quote">flâneur de code ✦</p>
+                <small style="font-size: 0.65rem; color: var(--dusty-rose); margin-top: 4px;">wandering through logic
+                  &amp; art</small>
+              </div>
+
+              <!-- 8. Paris Sacre Coeur -->
+              <div class="scrap-tile">
+                <img src="assets/paris/sacre-coeur.jpg" alt="Sacré-Cœur Basilica overlooking Paris">
+              </div>
+
+              <!-- 9. Mirror / Cafe Detail -->
+              <div class="scrap-tile">
+                <img src="assets/photo-1-cafe.jpg" alt="Sara in café portrait detail" style="object-position: 50% 15%;">
+              </div>
+            </div>
+          </div>
+
+          <!-- Part 03: Mobile App Mockups (3 Phone Mockups) -->
+          <div class="case-block">
+            <div class="case-block-head">
+              <h3>Mobile Experience 03</h3>
+              <span>Adaptive Student Flow</span>
+            </div>
+
+            <div class="mobile-screens-split">
+              <p>
+                Designed mobile-first so students can explore careers directly on their smartphones during transit,
+                study sessions, or hostel breaks.
+              </p>
+
+              <div class="mobile-phones-row">
+                <!-- Screen 1 -->
+                <div class="m-phone">
+                  <div class="m-screen m-screen-1">
+                    <div>
+                      <span class="m-badge">Quiz Flow</span>
+                      <div class="m-title">Discover Path</div>
+                    </div>
+                    <ul class="m-list">
+                      <li>✦ Creative Web</li>
+                      <li>✦ AI &amp; ML</li>
+                      <li>✦ Systems &amp; Cloud</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- Screen 2 -->
+                <div class="m-phone">
+                  <div class="m-screen m-screen-2">
+                    <div>
+                      <span class="m-badge">Roadmap</span>
+                      <div class="m-title">Software Dev</div>
+                    </div>
+                    <ul class="m-list">
+                      <li>✓ Python Basics</li>
+                      <li>✓ Data Structures</li>
+                      <li>○ Full-Stack App</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- Screen 3 -->
+                <div class="m-phone">
+                  <div class="m-screen m-screen-3">
+                    <div>
+                      <span class="m-badge">Vault</span>
+                      <div class="m-title">Free Guides</div>
+                    </div>
+                    <ul class="m-list">
+                      <li>★ CS50 Harvard</li>
+                      <li>★ Python Docs</li>
+                      <li>★ NeetCode 150</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 3. LEARNING JOURNEY (Timeline Field Notebook) -->
+        <section id="journey" class="panel panel-dark reveal">
+          <div class="panel-head">
+            <h2 class="panel-title">Learning Journey</h2>
+            <span class="panel-label">Milestones &bull; 2026 to 2030</span>
+          </div>
+
+          <p style="font-size: 0.92rem; color: rgba(248, 243, 236, 0.85); margin-bottom: 1.2rem;">
+            A transparent chronological record of where I started, what I am currently tackling, and where I am headed
+            next.
+          </p>
+
+          <ol class="journey-timeline">
+            <!-- Step 1 -->
+            <li class="journey-step">
+              <span class="journey-step-tag">2026 &bull; The Spark &amp; First Lines</span>
+              <h4>Discovered the Joy of Programming</h4>
+              <p>Wrote my first Python scripts, grasped functions, loops, and condition logic on Newton School of Technology, discovering the pure satisfaction of building software.</p>
+            </li>
+
+            <!-- Step 2 -->
+            <li class="journey-step">
+              <span class="journey-step-tag">2026 &bull; The First Build</span>
+              <h4>PathFinder &bull; Student Career Platform</h4>
+              <p>Designed and built my first complete web application from scratch. Exploring the power of semantic HTML, responsive
+                layout architecture with CSS Grid, and client-side state handling with JavaScript.</p>
+            </li>
+
+            <!-- Step 3 -->
+            <li class="journey-step">
+              <span class="journey-step-tag">Now &bull; Foundations &amp; Exploration</span>
+              <h4>Newton School of Technology &bull; Class of 2026–2030</h4>
+              <p>Mastering core computer science coursework: programming fundamentals in Python, discrete logic, version control with Git, and integrating modern AI models into developer workflows.</p>
+            </li>
+
+            <!-- Step 4 -->
+            <li class="journey-step">
+              <span class="journey-step-tag">Next &bull; Dreaming Beyond Limits</span>
+              <h4>DSA, Full-Stack &amp; Internships</h4>
+              <p>Eager to begin solving Data Structures &amp; Algorithms challenges, build full-stack tools with persistent
+                databases, collaborate on student startup ideas, and secure a software engineering internship.</p>
+            </li>
+          </ol>
+        </section>
+
+      </div>
+    </main>
+
+    <!-- ========================================================================
+       FOOTER: Parisian Carte Postale ("Say Hello")
+       ======================================================================== -->
+    <footer id="contact" class="postcard-footer reveal">
+      <div class="postcard-layout">
+        <div class="postcard-left">
+          <h2>Say Hello</h2>
+          <p class="postcard-lead">
+            Whether you want to discuss software engineering, recommend an inspiring book, talk about an internship
+            opportunity, or simply say <em>bonjour</em> — my inbox is always open.
+          </p>
+          <p class="postcard-meta-note">
+            Based in Pune, India &bull; Open to remote internships, student collaborations &amp; mentorship worldwide.
+          </p>
+        </div>
+
+        <div class="postcard-right">
+          <!-- Postmark & Eiffel Tower Stamp -->
+          <div class="postmark-row">
+            <div class="postmark-stamp">
+              <span>PARIS &bull; PUNE</span>
+              <span>AVION</span>
+              <span>2026</span>
+            </div>
+
+            <div class="eiffel-stamp">
+              <span class="stamp-icon">🗼</span>
+              <span>R.F. POSTE</span>
+            </div>
+          </div>
+
+          <!-- Action Links -->
+          <div class="postcard-actions">
+            <button class="copy-email-big-btn" data-copy="kottawarsara@gmail.com" title="Copy email address">
+              <span>✉</span> kottawarsara@gmail.com
+            </button>
+            <a href="mailto:kottawarsara@gmail.com" class="pill-link">Send Email ↗</a>
+            <a href="https://github.com/pagoll-glitch" target="_blank" rel="noopener" class="pill-link">GitHub ↗</a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener" class="pill-link">LinkedIn ↗</a>
+          </div>
+
+          <p class="postcard-signoff">Sara Kottawar</p>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- ========================================================================
+     INTERACTIVE MODAL: PATHFINDER LIVE SIMULATOR
+     ======================================================================== -->
+  <div class="modal-overlay" id="demoModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-window">
+      <div class="modal-header">
+        <h3 id="modalTitle">PathFinder &bull; Interactive Career Simulator</h3>
+        <button class="modal-close-btn" onclick="closeDemoModal()" aria-label="Close Modal">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        <p style="font-size: 0.92rem; color: #555; line-height: 1.5;">
+          Experience a live slice of <strong>PathFinder</strong>. Select your primary interest below to see the matched
+          engineering specialization and custom learning roadmap:
+        </p>
+
+        <div class="quiz-simulator">
+          <h4>1. Where does your curiosity naturally lean?</h4>
+          <div class="quiz-buttons-grid">
+            <button class="quiz-btn active" onclick="selectQuizTrack('web')">
+              🎨 Crafting Interfaces &amp; Visual Apps
+            </button>
+            <button class="quiz-btn" onclick="selectQuizTrack('ai')">
+              🤖 Artificial Intelligence &amp; Data
+            </button>
+            <button class="quiz-btn" onclick="selectQuizTrack('systems')">
+              ⚙️ Core Logic, Systems &amp; DSA
+            </button>
+          </div>
+
+          <div class="quiz-result-box visible" id="quizResultBox">
+            <h5 id="quizResultTitle">Matched Path: Creative Frontend &amp; Web Engineer</h5>
+            <p id="quizResultDesc">
+              You bridge human aesthetics with engineering logic. Recommended starting point: Semantic HTML5, CSS Grid
+              &amp; Flexbox, modern JavaScript ES6+, and React or Vue.
+            </p>
+          </div>
+        </div>
+
+        <div>
+          <h4
+            style="font-family: var(--font-serif); font-size: 1.25rem; color: var(--midnight-plum); margin-bottom: 8px;">
+            Recommended 3-Phase Roadmap:
+          </h4>
+          <div class="modal-roadmap-preview" id="roadmapPreview">
+            <div class="roadmap-card">
+              <b>Phase 1: Foundations</b>
+              <p>HTML semantics, responsive design, JavaScript DOM manipulation, Git version control.</p>
+            </div>
+            <div class="roadmap-card">
+              <b>Phase 2: First Projects</b>
+              <p>Build 3 standalone apps: a personal portfolio, a dynamic API dashboard, and an interactive quiz.</p>
+            </div>
+            <div class="roadmap-card">
+              <b>Phase 3: Deepening</b>
+              <p>Framework mastery, state architecture, accessibility (WCAG), performance optimization.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </main>
+  </div>
 
-  <footer id="contact" class="p rose contact reveal">
-    <h2>Say hello</h2>
-    <p class="links"><a href="mailto:your.email@example.com">your.email@example.com</a><a href="#" data-link="github">GitHub</a><a href="#" data-link="linkedin">LinkedIn</a></p>
-  </footer>
-</div>
-<script>
-/* Reveal panels as they scroll into view (skipped if the visitor prefers reduced motion). */
-const items = document.querySelectorAll('.reveal');
-if (!matchMedia('(prefers-reduced-motion: reduce)').matches && 'IntersectionObserver' in window) {
-  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: .12 });
-  items.forEach(i => io.observe(i));
-} else items.forEach(i => i.classList.add('in'));
+  <!-- ========================================================================
+     TOAST NOTIFICATION
+     ======================================================================== -->
+  <div class="toast-notice" id="toastNotice" role="status" aria-live="polite">
+    <span>✦</span> <span id="toastMsg">Email copied to clipboard!</span>
+  </div>
 
-/* Add your real URLs here; links marked data-link will be filled in automatically. */
-const URLS = { github: '', linkedin: '', 'pathfinder-live': '', 'pathfinder-code': '' };
-document.querySelectorAll('[data-link]').forEach(a => { const u = URLS[a.dataset.link]; if (u) { a.href = u; a.target = '_blank'; a.rel = 'noopener'; } });
-</script>
+  <!-- ========================================================================
+     SCRIPTS: Interactions, Web Audio Chime, Toast & Scroll Reveal
+     ======================================================================== -->
+  <script>
+    /* ---------- IntersectionObserver Reveal Animations ---------- */
+    const items = document.querySelectorAll('.reveal');
+    if (!matchMedia('(prefers-reduced-motion: reduce)').matches && 'IntersectionObserver' in window) {
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach((e) => {
+          if (e.isIntersecting) {
+            e.target.classList.add('in');
+            io.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.08 });
+      items.forEach((i) => io.observe(i));
+    } else {
+      items.forEach((i) => i.classList.add('in'));
+    }
+
+    /* ---------- Toast Notification Utility ---------- */
+    function showToast(msg) {
+      const toast = document.getElementById('toastNotice');
+      const msgEl = document.getElementById('toastMsg');
+      msgEl.textContent = msg;
+      toast.classList.add('show');
+      setTimeout(() => {
+        toast.classList.remove('show');
+      }, 3200);
+    }
+
+    /* ---------- Copy Email to Clipboard ---------- */
+    document.querySelectorAll('[data-copy]').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const email = btn.dataset.copy;
+        navigator.clipboard.writeText(email).then(() => {
+          showToast(`Email copied: ${email}`);
+        }).catch(() => {
+          showToast(`Contact: ${email}`);
+        });
+      });
+    });
+
+    /* ---------- Parisian Gentle Chime (Web Audio API) ---------- */
+    let audioCtx = null;
+    function playParisChime() {
+      try {
+        const AudioContext = window.AudioContext || window.webkitAudioContext;
+        if (!audioCtx) audioCtx = new AudioContext();
+        if (audioCtx.state === 'suspended') audioCtx.resume();
+
+        const notes = [523.25, 659.25, 783.99, 1046.50]; // C5, E5, G5, C6 (Major French Accordion Harmonic)
+        notes.forEach((freq, idx) => {
+          const osc = audioCtx.createOscillator();
+          const gain = audioCtx.createGain();
+
+          osc.type = 'sine';
+          osc.frequency.setValueAtTime(freq, audioCtx.currentTime + idx * 0.12);
+
+          gain.gain.setValueAtTime(0.001, audioCtx.currentTime + idx * 0.12);
+          gain.gain.exponentialRampToValueAtTime(0.08, audioCtx.currentTime + idx * 0.12 + 0.04);
+          gain.gain.exponentialRampToValueAtTime(0.0001, audioCtx.currentTime + idx * 0.12 + 1.2);
+
+          osc.connect(gain);
+          gain.connect(audioCtx.destination);
+
+          osc.start(audioCtx.currentTime + idx * 0.12);
+          osc.stop(audioCtx.currentTime + idx * 0.12 + 1.3);
+        });
+
+        showToast('♫ Parisian chime playing...');
+      } catch (e) {
+        showToast('Bonjour! Welcome to Sara\'s portfolio.');
+      }
+    }
+
+    const chimeBtn = document.getElementById('parisChimeBtn');
+    if (chimeBtn) chimeBtn.addEventListener('click', playParisChime);
+
+    /* ---------- Interactive Modal Simulation (PathFinder) ---------- */
+    const modal = document.getElementById('demoModal');
+
+    function openDemoModal() {
+      modal.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeDemoModal() {
+      modal.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) closeDemoModal();
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && modal.classList.contains('open')) closeDemoModal();
+    });
+
+    const tracks = {
+      web: {
+        title: 'Matched Path: Creative Frontend & Web Engineer',
+        desc: 'You bridge human aesthetics with engineering logic. Recommended starting point: Semantic HTML5, CSS Grid & Flexbox, modern JavaScript ES6+, and component thinking.',
+        phases: [
+          { b: 'Phase 1: Foundations', p: 'HTML semantics, responsive design, JavaScript DOM manipulation, Git version control.' },
+          { b: 'Phase 2: First Projects', p: 'Build 3 standalone apps: a personal portfolio, a dynamic API dashboard, and an interactive quiz.' },
+          { b: 'Phase 3: Deepening', p: 'Framework mastery, state architecture, accessibility (WCAG), performance optimization.' }
+        ]
+      },
+      ai: {
+        title: 'Matched Path: Artificial Intelligence & Machine Learning',
+        desc: 'You are energized by patterns, intelligent reasoning, and data. Recommended starting point: Python mastery, linear algebra, NumPy/Pandas, prompt architectures, and OpenAI/Gemini API integration.',
+        phases: [
+          { b: 'Phase 1: Python Mastery', p: 'Advanced Python, data handling libraries, probability, calculus fundamentals.' },
+          { b: 'Phase 2: Applied AI Tools', p: 'Prompt engineering, fine-tuning LLMs, retrieval augmented generation (RAG).' },
+          { b: 'Phase 3: Neural Networks', p: 'PyTorch/TensorFlow, model deployment, agentic systems, ethical AI.' }
+        ]
+      },
+      systems: {
+        title: 'Matched Path: Systems, Backend & Algorithmic Engineering',
+        desc: 'You are fascinated by the underlying mechanics of computers, data structures, and high-performance algorithms. Recommended starting point: C++, Data Structures & Algorithms, memory management, and Unix systems.',
+        phases: [
+          { b: 'Phase 1: Data Structures', p: 'Arrays, linked lists, trees, graphs, sorting algorithms, big-O complexity.' },
+          { b: 'Phase 2: Backend Logic', p: 'REST APIs, relational databases (SQL), caching, concurrency concepts.' },
+          { b: 'Phase 3: Distributed Systems', p: 'System design, microservices, Linux internals, cloud deployment.' }
+        ]
+      }
+    };
+
+    function selectQuizTrack(trackKey) {
+      const track = tracks[trackKey];
+      if (!track) return;
+
+      document.querySelectorAll('.quiz-buttons-grid .quiz-btn').forEach((btn, idx) => {
+        btn.classList.remove('active');
+      });
+      event.target.classList.add('active');
+
+      document.getElementById('quizResultTitle').textContent = track.title;
+      document.getElementById('quizResultDesc').textContent = track.desc;
+
+      const preview = document.getElementById('roadmapPreview');
+      preview.innerHTML = track.phases.map(p => `
+    <div class="roadmap-card">
+      <b>${p.b}</b>
+      <p>${p.p}</p>
+    </div>
+  `).join('');
+    }
+  </script>
+
+  <!-- Portfolio Core Engine -->
+  <script src="main.js"></script>
 </body>
+
 </html>

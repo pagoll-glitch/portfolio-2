@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects &amp; The Lab — Sara Kottawar</title>
+  <meta name="description"
+    content="Selected projects, hackathon solutions, and web prototypes by Sara Kottawar: PathFinder, UrbanPulse AI (SIH 2026), and Dream Vacation Paris.">
+
+  <!-- Typography & Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Italiana&family=Jost:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Mrs+Saint+Delafield&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="board">
+
+    <!-- Magazine Top Ribbon -->
+    <aside class="edition-strip">
+      <span>N° 02 &bull; PROJECT CATALOGUE</span>
+      <span>SELECTED WORKS &bull; HACKATHONS &bull; EXPERIMENTS</span>
+      <span>NEWTON SCHOOL OF TECHNOLOGY &bull; 2026–2030</span>
+    </aside>
+
+    <!-- Top Navigation Bar -->
+    <nav class="nav-bar">
+      <a href="index.html" class="nav-brand" style="text-decoration:none;">
+        <span class="flower">✦</span> SARA KOTTAWAR
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="projects.html" class="active-link">Projects</a></li>
+        <li><a href="journey.html">My Journey</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="theme-toggle-btn audio-btn" id="themeToggleBtn" title="Toggle Light / Dark Mode" aria-label="Toggle Light / Dark Mode">
+          <span class="theme-icon">☀️</span> Theme
+        </button>
+        <button class="audio-btn" id="parisChimeBtn" title="Play gentle Parisian harmonic chime">
+          <span>♫</span> Chime
+        </button>
+        <button class="copy-email-nav" data-copy="kottawarsara@gmail.com" title="Copy email address">
+          <span>✉</span> Copy Email
+        </button>
+      </div>
+    </nav>
+
+    <!-- Breadcrumb Bar -->
+    <div class="page-top-nav-bar">
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="crumb-sep">/</span>
+        <span class="crumb-current">Projects Hub</span>
+      </nav>
+      <a href="index.html" class="back-link">&larr; Back to Editorial Home</a>
+    </div>
+
+    <!-- Hero Banner -->
+    <header class="case-hero-banner reveal">
+      <span class="case-badge-pill">Selected Works &bull; 2026</span>
+      <h1 class="case-title">Code, Vision &amp; Prototypes<br><em>Crafted with Purpose.</em></h1>
+      <p class="case-subtitle">
+        Every project represents a curiosity turned into reality: solving real problems with computer vision at the Smart India Hackathon,
+        demystifying tech careers for freshmen, and exploring the beauty of editorial web design.
+      </p>
+    </header>
+
+    <!-- Main Project Showcase -->
+    <div class="layout-grid">
+
+      <!-- Left Column: Primary Case Studies -->
+      <div class="col col-left">
+
+        <!-- PROJECT 1: PATHFINDER -->
+        <article class="panel reveal">
+          <div class="panel-head">
+            <h2 class="panel-title">01 / Flagship Web App</h2>
+            <span class="panel-label">Career Discovery &bull; PathFinder</span>
+          </div>
+
+          <div class="case-section-box" style="margin-bottom: 0;">
+            <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 8px;">
+              <h3 style="margin-bottom: 0;">PathFinder</h3>
+              <span style="font-size: 0.76rem; font-weight: 700; color: var(--dusty-rose); letter-spacing: 0.08em; text-transform: uppercase;">
+                Interactive Assessment &bull; Roadmaps
+              </span>
+            </div>
+
+            <p style="margin-top: 10px;">
+              A student career discovery platform engineered to relieve freshman paralysis. Combines an intuitive,
+              zero-dependency self-assessment with tailored learning roadmaps for frontend engineering, AI/ML, and algorithmic systems.
+            </p>
+
+            <div class="tech-tag-row">
+              <span class="tech-tag-pill">Semantic HTML5</span>
+              <span class="tech-tag-pill">CSS Grid Architecture</span>
+              <span class="tech-tag-pill">Vanilla JavaScript ES6</span>
+              <span class="tech-tag-pill">Client-Side State</span>
+              <span class="tech-tag-pill">Responsive Design</span>
+            </div>
+
+            <div class="case-gallery-item" style="margin: 1rem 0;" onclick="location.href='project-pathfinder.html'">
+              <div style="background: #251e30; padding: 14px; border-radius: 4px; color: #fff; font-size: 0.85rem; display: flex; justify-content: space-between; align-items: center;">
+                <span>🧭 Interactive Career Discovery Engine Preview</span>
+                <span style="color: var(--champagne-gold); font-size: 0.78rem;">Click to View Case Study &rarr;</span>
+              </div>
+            </div>
+
+            <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 1.2rem;">
+              <a href="project-pathfinder.html" class="letter-btn letter-btn-primary">Open Dedicated Case Study &rarr;</a>
+              <button class="letter-btn letter-btn-secondary" onclick="openDemoModal()">Try Live Quiz Simulation</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 2: URBANPULSE AI (SIH 2026) -->
+        <article class="panel panel-rose reveal">
+          <div class="panel-head">
+            <h2 class="panel-title">02 / Hackathon Innovation</h2>
+            <span class="panel-label">Smart India Hackathon 2026 &bull; PS ID 26124</span>
+          </div>
+
+          <div class="sih-badge-banner">
+            <div class="sih-badge-left">
+              <img src="assets/sih/team-rubix-logo.png" alt="Team Rubix 3D Cube Logo">
+              <div class="sih-badge-titles">
+                <h4>UrbanPulse AI</h4>
+                <span>Smart India Hackathon 2026 &bull; Team Rubix</span>
+              </div>
+            </div>
+            <img src="assets/sih/sih2026-logo.png" alt="SIH 2026 Official Logo" style="height: 38px; width: auto; object-fit: contain;">
+          </div>
+
+          <div class="case-section-box" style="margin-bottom: 0;">
+            <h3>AI Mobile Urban Infrastructure Monitoring</h3>
+            <p>
+              Transforming everyday city buses into mobile environmental sensors. Using YOLOv8 computer vision running on edge feeds,
+              UrbanPulse AI detects potholes, cracked asphalt, and missing road dividers in real time, automatically tagging GPS coordinates
+              and streaming incidents to a centralized municipal GIS dashboard.
+            </p>
+
+            <div class="tech-tag-row">
+              <span class="tech-tag-pill">YOLOv8 Vision</span>
+              <span class="tech-tag-pill">FastAPI</span>
+              <span class="tech-tag-pill">PostgreSQL &amp; PostGIS</span>
+              <span class="tech-tag-pill">GPS Coordinate Tagging</span>
+              <span class="tech-tag-pill">Municipal GIS Dashboard</span>
+            </div>
+
+            <!-- Dashboard Preview Thumbnail -->
+            <div class="case-gallery-item" style="margin: 1rem 0;" onclick="location.href='project-urbanpulse.html'">
+              <img src="assets/sih/urbanpulse-dashboard.png" alt="UrbanPulse AI live GIS dashboard screenshot showing Pune road incident heatmap">
+              <div class="case-gallery-caption">
+                Live GIS Dashboard Interface &bull; Real-time Pune municipal map &bull; Pothole incident stream
+              </div>
+            </div>
+
+            <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 1.2rem;">
+              <a href="project-urbanpulse.html" class="letter-btn letter-btn-primary">Read SIH 2026 Case Study &rarr;</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Right Column: Project 3 & The Lab -->
+      <div class="col col-right">
+
+        <!-- PROJECT 3: DREAM VACATION - PARIS -->
+        <article class="panel panel-lav reveal">
+          <div class="panel-head">
+            <h2 class="panel-title">03 / Creative Web Guide</h2>
+            <span class="panel-label">Editorial Travel Site &bull; Paris</span>
+          </div>
+
+          <div class="case-section-box" style="margin-bottom: 0;">
+            <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 8px;">
+              <h3 style="margin-bottom: 0;">Dream Vacation &bull; Paris</h3>
+              <span style="font-size: 0.76rem; font-weight: 700; color: var(--dusty-rose); letter-spacing: 0.08em; text-transform: uppercase;">
+                Travel &bull; Food &bull; Monuments
+              </span>
+            </div>
+
+            <p style="margin-top: 10px;">
+              A multi-page responsive web experience celebrating the art, history, landmarks, and culinary culture of Paris.
+              Features dedicated guides to the Louvre, Arc de Triomphe, Notre-Dame, and authentic French bakery favorites including croissants and crêpes.
+            </p>
+
+            <div class="tech-tag-row">
+              <span class="tech-tag-pill">Multi-Page HTML5</span>
+              <span class="tech-tag-pill">CSS Grid &amp; Flexbox</span>
+              <span class="tech-tag-pill">Editorial Typography</span>
+              <span class="tech-tag-pill">Authentic Paris Assets</span>
+              <span class="tech-tag-pill">Responsive Art Direction</span>
+            </div>
+
+            <!-- Vacation Photo Grid -->
+            <div class="case-gallery-grid" style="grid-template-columns: 1fr 1fr; gap: 8px; margin: 1rem 0;">
+              <div class="case-gallery-item" onclick="location.href='project-dream-vacation.html'">
+                <img src="assets/vacation/eiffel.webp" alt="Eiffel Tower Paris" style="height: 130px;">
+                <div class="case-gallery-caption">Monument Guides</div>
+              </div>
+              <div class="case-gallery-item" onclick="location.href='project-dream-vacation.html'">
+                <img src="assets/vacation/french-food.jpg" alt="French bakery croissant cuisine" style="height: 130px;">
+                <div class="case-gallery-caption">French Cuisine</div>
+              </div>
+            </div>
+
+            <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 1.2rem;">
+              <a href="project-dream-vacation.html" class="letter-btn letter-btn-primary">View Paris Travel Case Study &rarr;</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- THE LAB: 4 MOBILE PROTOTYPES -->
+        <section id="lab" class="panel reveal">
+          <div class="panel-head">
+            <h2 class="panel-title">The Lab</h2>
+            <span class="panel-label">Visual Experiments &amp; Mobile UI</span>
+          </div>
+
+          <p class="lab-statement">
+            Rapid prototyping on smartphone form-factors to test navigation rhythms, micro-interactions, and visual hierarchy.
+          </p>
+
+          <div class="phones-row" style="grid-template-columns: 1fr 1fr; gap: 10px;">
+            <!-- Phone 1 -->
+            <div class="phone-mockup">
+              <div class="phone-bezel">
+                <div class="phone-notch"></div>
+                <div class="phone-screen screen-theme-1">
+                  <div class="screen-header-bar">
+                    <span>9:41</span>
+                    <span>PathFinder</span>
+                  </div>
+                  <div class="screen-body">
+                    <span class="screen-icon">🧭</span>
+                    <div class="screen-app-title">Career Match</div>
+                    <div class="screen-app-desc">Student quiz engine.</div>
+                  </div>
+                  <a href="project-pathfinder.html" class="screen-footer-btn" style="text-decoration:none; display:block; text-align:center;">Study</a>
+                </div>
+              </div>
+              <div class="phone-info">
+                <h4>PathFinder</h4>
+                <p>Career App</p>
+              </div>
+            </div>
+
+            <!-- Phone 2 -->
+            <div class="phone-mockup">
+              <div class="phone-bezel">
+                <div class="phone-notch"></div>
+                <div class="phone-screen screen-theme-2">
+                  <div class="screen-header-bar">
+                    <span>9:41</span>
+                    <span>Paris Guide</span>
+                  </div>
+                  <div class="screen-body">
+                    <span class="screen-icon">🥐</span>
+                    <div class="screen-app-title">Vacation</div>
+                    <div class="screen-app-desc">French landmarks.</div>
+                  </div>
+                  <a href="project-dream-vacation.html" class="screen-footer-btn" style="text-decoration:none; display:block; text-align:center;">Guide</a>
+                </div>
+              </div>
+              <div class="phone-info">
+                <h4>Dream Vacation</h4>
+                <p>Paris Guide</p>
+              </div>
+            </div>
+
+            <!-- Phone 3 -->
+            <div class="phone-mockup">
+              <div class="phone-bezel">
+                <div class="phone-notch"></div>
+                <div class="phone-screen screen-theme-3">
+                  <div class="screen-header-bar">
+                    <span>9:41</span>
+                    <span>UrbanPulse</span>
+                  </div>
+                  <div class="screen-body">
+                    <span class="screen-icon">🚌</span>
+                    <div class="screen-app-title">SIH 2026</div>
+                    <div class="screen-app-desc">Live road alert.</div>
+                  </div>
+                  <a href="project-urbanpulse.html" class="screen-footer-btn" style="text-decoration:none; display:block; text-align:center;">SIH</a>
+                </div>
+              </div>
+              <div class="phone-info">
+                <h4>UrbanPulse AI</h4>
+                <p>SIH Hackathon</p>
+              </div>
+            </div>
+
+            <!-- Phone 4 -->
+            <div class="phone-mockup">
+              <div class="phone-bezel">
+                <div class="phone-notch"></div>
+                <div class="phone-screen screen-theme-4">
+                  <div class="screen-header-bar">
+                    <span>9:41</span>
+                    <span>StudyPulse</span>
+                  </div>
+                  <div class="screen-body">
+                    <span class="screen-icon">⏳</span>
+                    <div class="screen-app-title">StudyPulse</div>
+                    <div class="screen-app-desc">Focus utility.</div>
+                  </div>
+                  <span class="screen-footer-btn">Concept</span>
+                </div>
+              </div>
+              <div class="phone-info">
+                <h4>StudyPulse</h4>
+                <p>Focus App</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Navigation Footer -->
+        <div class="project-nav-footer">
+          <a href="about.html" class="project-nav-btn">&larr; About Me</a>
+          <a href="journey.html" class="project-nav-btn">My Journey &rarr;</a>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Carte Postale Footer -->
+    <footer id="contact" class="postcard-footer reveal">
+      <div class="postcard-layout">
+        <div class="postcard-left">
+          <h2>Have an Idea to Build?</h2>
+          <p class="postcard-lead">
+            I am always seeking ambitious hackathon teams, open-source projects, and student peer groups to build with.
+          </p>
+          <p class="postcard-meta-note">
+            Pune, Maharashtra &bull; Newton School of Technology &bull; kottawarsara@gmail.com
+          </p>
+        </div>
+
+        <div class="postcard-right">
+          <div class="postcard-actions">
+            <a href="mailto:kottawarsara@gmail.com" class="postcard-email-link">kottawarsara@gmail.com</a>
+            <button class="copy-email-nav" data-copy="kottawarsara@gmail.com">Copy Email Address</button>
+          </div>
+          <div class="postcard-socials">
+            <a href="https://github.com/pagoll-glitch" target="_blank" rel="noopener">GitHub ↗</a>
+            <a href="contact.html">Send A Letter ↗</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Interactive Demo Modal for Quiz -->
+  <div class="modal-backdrop" id="demoModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-sheet">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <span class="modal-kicker">Interactive Web Prototype</span>
+          <h3 id="modalTitle">PathFinder &bull; Role Discovery Quiz</h3>
+        </div>
+        <button class="modal-close-btn" onclick="closeDemoModal()" aria-label="Close dialog">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        <div class="quiz-simulator">
+          <p class="quiz-step-indicator">Question 01 of 03 &bull; Core Motivation</p>
+          <h4 class="quiz-question-heading">When starting a new project, what phase brings you the most joy?</h4>
+
+          <div class="quiz-buttons-grid">
+            <button class="quiz-btn active" onclick="selectQuizTrack('web')">
+              <span class="quiz-btn-num">A</span>
+              <div>
+                <b>Visual Aesthetics &amp; Interaction</b>
+                <span>Crafting typography, layouts, micro-animations, and delighting users.</span>
+              </div>
+            </button>
+            <button class="quiz-btn" onclick="selectQuizTrack('ai')">
+              <span class="quiz-btn-num">B</span>
+              <div>
+                <b>Data, Machine Intelligence &amp; Vision</b>
+                <span>Analyzing patterns, training models, and building intelligent agents.</span>
+              </div>
+            </button>
+            <button class="quiz-btn" onclick="selectQuizTrack('systems')">
+              <span class="quiz-btn-num">C</span>
+              <div>
+                <b>Deep Systems &amp; Algorithmic Logic</b>
+                <span>Writing fast data structures, low-level mechanics, and robust backends.</span>
+              </div>
+            </button>
+          </div>
+        </div>
+
+        <div class="quiz-result-box" id="quizResultArea">
+          <div class="quiz-result-badge">✦ Personalized Student Roadmap</div>
+          <h4 id="quizResultTitle">Matched Path: Creative Frontend &amp; Web Engineer</h4>
+          <p id="quizResultDesc">
+            You bridge human aesthetics with engineering logic. Recommended starting point: Semantic HTML5, CSS Grid &amp;
+            Flexbox, modern JavaScript ES6+, and component thinking.
+          </p>
+
+          <div class="modal-roadmap-preview" id="roadmapPreview">
+            <div class="roadmap-card">
+              <b>Phase 1: Foundations</b>
+              <p>HTML semantics, responsive design, JavaScript DOM manipulation, Git version control.</p>
+            </div>
+            <div class="roadmap-card">
+              <b>Phase 2: First Projects</b>
+              <p>Build 3 standalone apps: a personal portfolio, a dynamic API dashboard, and an interactive quiz.</p>
+            </div>
+            <div class="roadmap-card">
+              <b>Phase 3: Deepening</b>
+              <p>Framework mastery, state architecture, accessibility (WCAG), performance optimization.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Global Lightbox Modal -->
+  <div class="lightbox-overlay" id="lightboxOverlay" aria-modal="true" role="dialog" aria-hidden="true">
+    <div class="lightbox-container">
+      <button class="lightbox-close-btn" id="lightboxClose" aria-label="Close image">&times;</button>
+      <img src="" alt="" class="lightbox-img" id="lightboxImg">
+      <p class="lightbox-caption" id="lightboxCaption"></p>
+    </div>
+  </div>
+
+  <!-- Portfolio Core Engine -->
+  <script src="main.js"></script>
+</body>
+
+</html>
+

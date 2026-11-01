@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UrbanPulse AI — Smart India Hackathon 2026 Case Study | Sara Kottawar</title>
+  <meta name="description"
+    content="UrbanPulse AI case study: AI-powered mobile urban monitoring system using city buses as sensors for Smart India Hackathon 2026 (Problem Statement ID 26124), Team Rubix.">
+
+  <!-- Typography & Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Italiana&family=Jost:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Mrs+Saint+Delafield&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="board">
+
+    <!-- Magazine Top Ribbon -->
+    <aside class="edition-strip">
+      <span>N° 07 &bull; SPECIAL HACKATHON DOSSIER</span>
+      <span>SMART INDIA HACKATHON 2026 &bull; PROBLEM STATEMENT ID 26124</span>
+      <span>TEAM RUBIX &bull; NEWTON SCHOOL OF TECHNOLOGY</span>
+    </aside>
+
+    <!-- Top Navigation Bar -->
+    <nav class="nav-bar">
+      <a href="index.html" class="nav-brand" style="text-decoration:none;">
+        <span class="flower">✦</span> SARA KOTTAWAR
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="projects.html" class="active-link">Projects</a></li>
+        <li><a href="journey.html">My Journey</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="theme-toggle-btn audio-btn" id="themeToggleBtn" title="Toggle Light / Dark Mode" aria-label="Toggle Light / Dark Mode">
+          <span class="theme-icon">☀️</span> Theme
+        </button>
+        <button class="audio-btn" id="parisChimeBtn" title="Play gentle Parisian harmonic chime">
+          <span>♫</span> Chime
+        </button>
+        <button class="copy-email-nav" data-copy="kottawarsara@gmail.com" title="Copy email address">
+          <span>✉</span> Copy Email
+        </button>
+      </div>
+    </nav>
+
+    <!-- Breadcrumb Bar -->
+    <div class="page-top-nav-bar">
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="crumb-sep">/</span>
+        <a href="projects.html">Projects</a>
+        <span class="crumb-sep">/</span>
+        <span class="crumb-current">UrbanPulse AI &bull; SIH 2026</span>
+      </nav>
+      <a href="projects.html" class="back-link">&larr; Back to Projects Hub</a>
+    </div>
+
+    <!-- Hero Banner with SIH Branding -->
+    <header class="case-hero-banner reveal">
+      <div class="sih-badge-banner" style="margin-bottom: 1.2rem;">
+        <div class="sih-badge-left">
+          <img src="assets/sih/team-rubix-logo.png" alt="Team Rubix 3D Cube Logo">
+          <div class="sih-badge-titles">
+            <h4>Smart India Hackathon 2026</h4>
+            <span>Team Rubix &bull; Problem Statement ID: 26124</span>
+          </div>
+        </div>
+        <img src="assets/sih/sih2026-logo.png" alt="SIH 2026 Official Logo" style="height: 42px; width: auto; object-fit: contain;">
+      </div>
+
+      <h1 class="case-title">UrbanPulse AI &bull; <em>Smart City Road Monitoring</em></h1>
+      <p class="case-subtitle">
+        An AI-powered mobile urban infrastructure monitoring system that transforms everyday public buses into
+        moving sensors to detect potholes, damaged dividers, and road hazards in real time.
+      </p>
+    </header>
+
+    <!-- Project Metadata Strip -->
+    <div class="case-meta-grid reveal">
+      <div class="case-meta-item">
+        <span class="case-meta-label">Event</span>
+        <span class="case-meta-value">Smart India Hackathon 2026</span>
+      </div>
+      <div class="case-meta-item">
+        <span class="case-meta-label">Team</span>
+        <span class="case-meta-value">Team Rubix (6 Members)</span>
+      </div>
+      <div class="case-meta-item">
+        <span class="case-meta-label">Problem Statement ID</span>
+        <span class="case-meta-value">26124 &bull; Urban Infrastructure</span>
+      </div>
+      <div class="case-meta-item">
+        <span class="case-meta-label">Institution</span>
+        <span class="case-meta-value">Newton School of Technology</span>
+      </div>
+    </div>
+
+    <!-- Quick External Links Bar -->
+    <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 1.5rem;">
+      <a href="https://github.com/pagoll-glitch" target="_blank" rel="noopener" class="back-link">
+        <span>🐙</span> GitHub Repository ↗
+      </a>
+      <a href="#prototype" class="back-link">
+        <span>📱</span> View Prototype QR ↗
+      </a>
+      <a href="#presentation" class="back-link">
+        <span>📄</span> Research &amp; Presentation Slides ↗
+      </a>
+    </div>
+
+    <!-- Main Two-Column Layout -->
+    <div class="layout-grid">
+
+      <!-- Left Column: Problem, Solution, GIS Dashboard Preview -->
+      <div class="col col-left">
+
+        <!-- 1. The Problem Statement -->
+        <section class="case-section-box reveal">
+          <h3>1. The Problem Statement</h3>
+          <p>
+            <strong>Problem Statement ID: 26124</strong>
+          </p>
+          <p>
+            Potholes, broken road dividers, faded lane markings, and damaged asphalt frequently go unnoticed by municipal
+            authorities for weeks or months. Traditional road inspections rely on slow, manual survey vehicles or citizen
+            complaint portals that are reactive and under-reported, leading to severe traffic accidents, vehicle damage, and urban gridlock.
+          </p>
+        </section>
+
+        <!-- 2. Proposed Solution -->
+        <section class="case-section-box reveal">
+          <h3>2. The Proposed Solution</h3>
+          <p>
+            Instead of deploying expensive dedicated survey vehicles, <strong>UrbanPulse AI</strong> converts the city's
+            existing public transit buses into passive, high-frequency mobile urban sensors.
+          </p>
+          <p>
+            Equipped with camera units mounted behind the windshield, edge devices continuously run <strong>YOLOv8</strong>
+            object detection on video feeds, identifying road defects as buses navigate daily municipal routes. Detected incidents
+            are geocoded with real-time GPS coordinates, checked for duplicates, and dispatched instantly to a central GIS dashboard.
+          </p>
+        </section>
+
+        <!-- 3. Real GIS Dashboard Interface (Extracted Presentation Asset) -->
+        <section class="case-section-box reveal">
+          <h3>3. Live GIS Dashboard &bull; Click to Expand</h3>
+          <p>The centralized municipal control center displaying real-time incident heatmap across Pune city routes:</p>
+
+          <div class="case-gallery-item" style="margin-top: 1rem;">
+            <img src="assets/sih/urbanpulse-dashboard.png" alt="UrbanPulse AI live GIS dashboard showing Pune city road map, bus routes, and detected pothole locations" data-zoom>
+            <div class="case-gallery-caption">
+              Live Municipal GIS Interface &bull; Real-time Pune GPS route tracking, severe pothole heatmap &bull; Active buses online
+            </div>
+          </div>
+
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 1rem;">
+            <div class="case-gallery-item">
+              <img src="assets/sih/urbanpulse-alert.png" alt="UrbanPulse AI incident alert card UP-10291" data-zoom>
+              <div class="case-gallery-caption">Incident Card UP-10291 &bull; Coordinates &amp; Severity</div>
+            </div>
+            <div class="case-gallery-item" id="prototype">
+              <img src="assets/sih/prototype-qr.png" alt="UrbanPulse AI Prototype QR Code" data-zoom style="object-fit: contain; padding: 10px; background: #fff;">
+              <div class="case-gallery-caption">Prototype QR &bull; Live Mobile Feed</div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+
+      <!-- Right Column: Key Features, Tech Stack, Team, Contribution -->
+      <div class="col col-right">
+
+        <!-- 4. Key Features -->
+        <section class="case-section-box reveal">
+          <h3>4. Key Features</h3>
+          <ul style="list-style: none; padding-left: 0; display: flex; flex-direction: column; gap: 10px; font-size: 0.92rem; color: #554f5c;">
+            <li>✦ <strong>Road Defect Detection:</strong> Real-time computer vision identifying potholes, cracks, and broken dividers.</li>
+            <li>✦ <strong>GPS-Based Incident Mapping:</strong> Every defect is instantly tagged with high-precision geographic coordinates.</li>
+            <li>✦ <strong>Severity Classification:</strong> Automated triage classifying hazards (Minor, Moderate, Critical) for priority dispatch.</li>
+            <li>✦ <strong>Duplicate Detection &amp; Validation:</strong> Spatial clustering algorithms prevent multiple buses on the same route from spamming duplicate alerts.</li>
+            <li>✦ <strong>Municipal GIS Dashboard:</strong> Live route heatmaps, bus fleet telemetry, and maintenance status tracking.</li>
+            <li>✦ <strong>Maintenance Tracking:</strong> Closes the loop from automated detection to municipal repair sign-off.</li>
+          </ul>
+        </section>
+
+        <!-- 5. Technologies Used -->
+        <section class="case-section-box reveal">
+          <h3>5. Key Technologies</h3>
+          <div class="tech-tag-row">
+            <span class="tech-tag-pill">YOLOv8 Edge Vision</span>
+            <span class="tech-tag-pill">Computer Vision (OpenCV)</span>
+            <span class="tech-tag-pill">FastAPI (Python)</span>
+            <span class="tech-tag-pill">PostgreSQL &amp; PostGIS</span>
+            <span class="tech-tag-pill">GPS Coordinate Tagging</span>
+            <span class="tech-tag-pill">Leaflet / Mapbox GIS</span>
+            <span class="tech-tag-pill">Spatial Clustering</span>
+          </div>
+        </section>
+
+        <!-- 6. Team Rubix Roster -->
+        <section class="panel panel-lav reveal">
+          <div class="panel-head">
+            <h2 class="panel-title">6. Team Rubix</h2>
+            <span class="panel-label">Newton School of Technology</span>
+          </div>
+
+          <div class="team-roster-grid">
+            <div class="team-member-card">
+              <b>Nitish Singla</b>
+              <span>Team Leader</span>
+            </div>
+            <div class="team-member-card">
+              <b>Sara Kottawar</b>
+              <span>Team Member</span>
+            </div>
+            <div class="team-member-card">
+              <b>Dhruv Kashiv</b>
+              <span>Team Member</span>
+            </div>
+            <div class="team-member-card">
+              <b>Shubh Srivastave</b>
+              <span>Team Member</span>
+            </div>
+            <div class="team-member-card">
+              <b>Gitesh Patil</b>
+              <span>Team Member</span>
+            </div>
+            <div class="team-member-card">
+              <b>Parishi Maheshwari</b>
+              <span>Team Member</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- 7. My Contribution & Learnings (Editable Placeholders) -->
+        <section class="panel panel-rose reveal">
+          <div class="panel-head">
+            <h2 class="panel-title">7. My Contribution &amp; Learnings</h2>
+            <span class="panel-label">Editable Student Reflection</span>
+          </div>
+
+          <div class="editable-note-callout">
+            <h4>My Contribution</h4>
+            <p>
+              As a first-year student member of Team Rubix, I contributed to research on municipal road defect datasets,
+              user interface wireframes for the dashboard incident alert feeds, presentation slide synthesis, and hackathon ideation.
+              <em>(Editable placeholder: update with your exact personal focus areas as the project progresses).</em>
+            </p>
+          </div>
+
+          <div class="editable-note-callout">
+            <h4>Key Hackathon Learnings</h4>
+            <p>
+              <strong>1. Edge AI in the physical world:</strong> Seeing how YOLOv8 processes frame-by-frame camera feeds opened my eyes to practical applied machine learning beyond theoretical code tutorials.<br>
+              <strong>2. Interdisciplinary collaboration:</strong> Working with 5 teammates under hackathon pressure taught me the value of clear communication, task division, and shared version control.<br>
+              <strong>3. Civic tech impact:</strong> Technology feels most rewarding when it solves tangible civic problems that affect everyday citizens.
+            </p>
+          </div>
+        </section>
+
+        <!-- 8. Presentation Slides Thumbnails -->
+        <section class="case-section-box reveal" id="presentation">
+          <h3>8. Original Presentation Slides</h3>
+          <div class="case-gallery-grid" style="grid-template-columns: 1fr 1fr; gap: 10px;">
+            <div class="case-gallery-item">
+              <img src="assets/sih/sih-title-slide.jpg" alt="UrbanPulse AI SIH Title Slide" data-zoom>
+              <div class="case-gallery-caption">Title Slide &bull; PS ID 26124</div>
+            </div>
+            <div class="case-gallery-item">
+              <img src="assets/sih/sih-solution-slide.jpg" alt="UrbanPulse AI SIH Proposed Solution Slide" data-zoom>
+              <div class="case-gallery-caption">Proposed Architecture Slide</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Project Navigation Footer -->
+        <div class="project-nav-footer">
+          <a href="project-dream-vacation.html" class="project-nav-btn">&larr; Previous: Dream Vacation</a>
+          <a href="projects.html" class="project-nav-btn">All Projects &rarr;</a>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Carte Postale Footer -->
+    <footer class="postcard-footer reveal">
+      <div class="postcard-layout">
+        <div class="postcard-left">
+          <h2>Smart India Hackathon 2026</h2>
+          <p class="postcard-lead">
+            UrbanPulse AI was developed with pride by Team Rubix at Newton School of Technology.
+          </p>
+          <p class="postcard-meta-note">
+            Problem Statement ID: 26124 &bull; Sara Kottawar &bull; kottawarsara@gmail.com
+          </p>
+        </div>
+
+        <div class="postcard-right">
+          <div class="postcard-actions">
+            <a href="mailto:kottawarsara@gmail.com" class="postcard-email-link">kottawarsara@gmail.com</a>
+            <button class="copy-email-nav" data-copy="kottawarsara@gmail.com">Copy Email Address</button>
+          </div>
+          <div class="postcard-socials">
+            <a href="https://github.com/pagoll-glitch" target="_blank" rel="noopener">GitHub ↗</a>
+            <a href="contact.html">Contact Me ↗</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Global Lightbox Modal -->
+  <div class="lightbox-overlay" id="lightboxOverlay" aria-modal="true" role="dialog" aria-hidden="true">
+    <div class="lightbox-container">
+      <button class="lightbox-close-btn" id="lightboxClose" aria-label="Close image">&times;</button>
+      <img src="" alt="" class="lightbox-img" id="lightboxImg">
+      <p class="lightbox-caption" id="lightboxCaption"></p>
+    </div>
+  </div>
+
+  <!-- Portfolio Core Engine -->
+  <script src="main.js"></script>
+</body>
+
+</html>
+

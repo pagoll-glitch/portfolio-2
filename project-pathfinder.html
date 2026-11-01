@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PathFinder Case Study — Sara Kottawar</title>
+  <meta name="description"
+    content="Case study of PathFinder: a zero-dependency interactive career discovery platform for first-year computer science students designed and coded by Sara Kottawar.">
+
+  <!-- Typography & Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Italiana&family=Jost:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Mrs+Saint+Delafield&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="board">
+
+    <!-- Magazine Top Ribbon -->
+    <aside class="edition-strip">
+      <span>N° 05 &bull; CASE STUDY &bull; WEB APPLICATION</span>
+      <span>FLAGSHIP PROJECT &bull; PATHFINDER CAREER DISCOVERY</span>
+      <span>NEWTON SCHOOL OF TECHNOLOGY &bull; 2026–2030</span>
+    </aside>
+
+    <!-- Top Navigation Bar -->
+    <nav class="nav-bar">
+      <a href="index.html" class="nav-brand" style="text-decoration:none;">
+        <span class="flower">✦</span> SARA KOTTAWAR
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="projects.html" class="active-link">Projects</a></li>
+        <li><a href="journey.html">My Journey</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="theme-toggle-btn audio-btn" id="themeToggleBtn" title="Toggle Light / Dark Mode" aria-label="Toggle Light / Dark Mode">
+          <span class="theme-icon">☀️</span> Theme
+        </button>
+        <button class="audio-btn" id="parisChimeBtn" title="Play gentle Parisian harmonic chime">
+          <span>♫</span> Chime
+        </button>
+        <button class="copy-email-nav" data-copy="kottawarsara@gmail.com" title="Copy email address">
+          <span>✉</span> Copy Email
+        </button>
+      </div>
+    </nav>
+
+    <!-- Breadcrumb Bar -->
+    <div class="page-top-nav-bar">
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="crumb-sep">/</span>
+        <a href="projects.html">Projects</a>
+        <span class="crumb-sep">/</span>
+        <span class="crumb-current">PathFinder</span>
+      </nav>
+      <a href="projects.html" class="back-link">&larr; Back to Projects Hub</a>
+    </div>
+
+    <!-- Hero Banner -->
+    <header class="case-hero-banner reveal">
+      <span class="case-badge-pill">Project 01 &bull; Flagship Web Application</span>
+      <h1 class="case-title">PathFinder &bull; <em>Demystifying Student Tech Careers</em></h1>
+      <p class="case-subtitle">
+        An interactive career exploration platform engineered with vanilla web technologies to help freshmen navigate
+        the overwhelming landscape of tech specializations with personalized, actionable study roadmaps.
+      </p>
+    </header>
+
+    <!-- Project Metadata Strip -->
+    <div class="case-meta-grid reveal">
+      <div class="case-meta-item">
+        <span class="case-meta-label">Project Role</span>
+        <span class="case-meta-value">Solo Designer &amp; Developer</span>
+      </div>
+      <div class="case-meta-item">
+        <span class="case-meta-label">Timeline</span>
+        <span class="case-meta-value">First Year &bull; 2026</span>
+      </div>
+      <div class="case-meta-item">
+        <span class="case-meta-label">Key Stack</span>
+        <span class="case-meta-value">Semantic HTML5, CSS Grid, Vanilla JS</span>
+      </div>
+      <div class="case-meta-item">
+        <span class="case-meta-label">Links</span>
+        <span class="case-meta-value">
+          <a href="https://github.com/pagoll-glitch" target="_blank" rel="noopener" style="color:var(--champagne-gold); text-decoration:none;">GitHub Repository ↗</a>
+        </span>
+      </div>
+    </div>
+
+    <!-- Main Two-Column Layout -->
+    <div class="layout-grid">
+
+      <!-- Left Column: Problem, Approach & Interactive Quiz -->
+      <div class="col col-left">
+
+        <!-- 1. The Problem -->
+        <section class="case-section-box reveal">
+          <h3>The Problem &bull; Freshman Career Paralysis</h3>
+          <p>
+            When entering computer science as a freshman, students are bombarded with endless conflicting advice:
+            <em>"Learn Rust!", "Focus on AI agents!", "Start with Web Dev!", "Solve 500 LeetCode problems!"</em>
+          </p>
+          <p>
+            This fragmentation creates severe imposter syndrome and career paralysis. Most students don't know what
+            different roles actually feel like in daily practice or how their natural strengths align with specific trajectories.
+          </p>
+        </section>
+
+        <!-- 2. My Approach -->
+        <section class="case-section-box reveal">
+          <h3>My Approach &bull; Zero-Bloat, Self-Reflective UI</h3>
+          <p>
+            Rather than building a heavy full-stack application with user logins and databases, I deliberately chose
+            a lightweight, zero-dependency browser application that any student could open on a laptop or smartphone in seconds.
+          </p>
+          <p>
+            I architected a 3-question reflective assessment that evaluates cognitive preferences: visual-spatial thinking (Web Engineering),
+            pattern recognition and data curiosity (AI/ML), or deep algorithmic puzzles and systems architecture (Backend &amp; Logic).
+          </p>
+
+          <div class="tech-tag-row">
+            <span class="tech-tag-pill">No Framework Overhead</span>
+            <span class="tech-tag-pill">Instant Page Load (&lt;200ms)</span>
+            <span class="tech-tag-pill">Mobile-First Touch Target Sizing</span>
+            <span class="tech-tag-pill">Accessible Keyboard Navigation</span>
+          </div>
+        </section>
+
+        <!-- 3. Interactive Quiz Simulator Embedded -->
+        <section class="case-section-box reveal">
+          <h3>Interactive Quiz Simulator</h3>
+          <p>Experience the role discovery logic directly below:</p>
+
+          <div class="quiz-simulator" style="margin-top: 1rem;">
+            <p class="quiz-step-indicator">Question 01 of 03 &bull; Core Motivation</p>
+            <h4 class="quiz-question-heading">When starting a new project, what phase brings you the most joy?</h4>
+
+            <div class="quiz-buttons-grid">
+              <button class="quiz-btn active" onclick="selectQuizTrack('web')">
+                <span class="quiz-btn-num">A</span>
+                <div>
+                  <b>Visual Aesthetics &amp; Interaction</b>
+                  <span>Crafting typography, layouts, micro-animations, and delighting users.</span>
+                </div>
+              </button>
+              <button class="quiz-btn" onclick="selectQuizTrack('ai')">
+                <span class="quiz-btn-num">B</span>
+                <div>
+                  <b>Data, Machine Intelligence &amp; Vision</b>
+                  <span>Analyzing patterns, training models, and building intelligent agents.</span>
+                </div>
+              </button>
+              <button class="quiz-btn" onclick="selectQuizTrack('systems')">
+                <span class="quiz-btn-num">C</span>
+                <div>
+                  <b>Deep Systems &amp; Algorithmic Logic</b>
+                  <span>Writing fast data structures, low-level mechanics, and robust backends.</span>
+                </div>
+              </button>
+            </div>
+          </div>
+
+          <div class="quiz-result-box" id="quizResultArea" style="margin-top: 1rem;">
+            <div class="quiz-result-badge">✦ Personalized Student Roadmap</div>
+            <h4 id="quizResultTitle">Matched Path: Creative Frontend &amp; Web Engineer</h4>
+            <p id="quizResultDesc">
+              You bridge human aesthetics with engineering logic. Recommended starting point: Semantic HTML5, CSS Grid &amp;
+              Flexbox, modern JavaScript ES6+, and component thinking.
+            </p>
+
+            <div class="modal-roadmap-preview" id="roadmapPreview">
+              <div class="roadmap-card">
+                <b>Phase 1: Foundations</b>
+                <p>HTML semantics, responsive design, JavaScript DOM manipulation, Git version control.</p>
+              </div>
+              <div class="roadmap-card">
+                <b>Phase 2: First Projects</b>
+                <p>Build 3 standalone apps: a personal portfolio, a dynamic API dashboard, and an interactive quiz.</p>
+              </div>
+              <div class="roadmap-card">
+                <b>Phase 3: Deepening</b>
+                <p>Framework mastery, state architecture, accessibility (WCAG), performance optimization.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+
+      <!-- Right Column: Key Features, Tech Stack & Learnings -->
+      <div class="col col-right">
+
+        <!-- Key Features -->
+        <section class="case-section-box reveal">
+          <h3>Key Features</h3>
+          <ul style="list-style: none; padding-left: 0; display: flex; flex-direction: column; gap: 10px; font-size: 0.92rem; color: #554f5c;">
+            <li>✦ <strong>Dynamic Trajectory Engine:</strong> Evaluates responses and maps student strengths to 3 major CS paths.</li>
+            <li>✦ <strong>Three-Phase Roadmaps:</strong> Step-by-step guidance broken into Foundations, First Projects, and Deepening.</li>
+            <li>✦ <strong>Curated Vault:</strong> Direct links to premier free learning materials (CS50, MDN, Python Docs).</li>
+            <li>✦ <strong>Adaptive Screen Design:</strong> Fluid experience whether viewed on desktop widescreen or transit smartphone.</li>
+          </ul>
+        </section>
+
+        <!-- Technologies Used -->
+        <section class="case-section-box reveal">
+          <h3>Technologies Used</h3>
+          <div class="tech-tag-row">
+            <span class="tech-tag-pill">HTML5 Semantics</span>
+            <span class="tech-tag-pill">CSS Grid &amp; Flexbox</span>
+            <span class="tech-tag-pill">Vanilla JavaScript (ES6+)</span>
+            <span class="tech-tag-pill">DOM Manipulation</span>
+            <span class="tech-tag-pill">Responsive Media Queries</span>
+            <span class="tech-tag-pill">Web Accessibility (a11y)</span>
+          </div>
+        </section>
+
+        <!-- What I Learned -->
+        <section class="panel panel-rose reveal">
+          <div class="panel-head">
+            <h2 class="panel-title">What I Learned</h2>
+            <span class="panel-label">Engineering Reflection</span>
+          </div>
+
+          <div style="font-size: 0.92rem; line-height: 1.65; color: var(--charcoal); display: flex; flex-direction: column; gap: 10px;">
+            <p>
+              <strong>1. You don't always need a heavy framework:</strong> Building this entirely in vanilla JavaScript gave me deep appreciation for the native DOM API, event delegation, and clean CSS layout techniques.
+            </p>
+            <p>
+              <strong>2. User empathy is everything:</strong> Friends who used PathFinder didn't care about the complexity of the code—they cared that they finally had a 3-step plan instead of 50 open browser tabs.
+            </p>
+            <p>
+              <strong>3. Mobile ergonomics:</strong> Ensuring buttons are easily clickable with thumbs and roadmap cards are readable on small screens taught me responsive design first-hand.
+            </p>
+          </div>
+        </section>
+
+        <!-- Project Navigation Footer -->
+        <div class="project-nav-footer">
+          <a href="projects.html" class="project-nav-btn">&larr; All Projects</a>
+          <a href="project-urbanpulse.html" class="project-nav-btn">Next: UrbanPulse AI &rarr;</a>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Carte Postale Footer -->
+    <footer class="postcard-footer reveal">
+      <div class="postcard-layout">
+        <div class="postcard-left">
+          <h2>Have Thoughts on PathFinder?</h2>
+          <p class="postcard-lead">
+            I would love your feedback on the career roadmaps or ideas for new student tracks.
+          </p>
+          <p class="postcard-meta-note">
+            Sara Kottawar &bull; Newton School of Technology &bull; kottawarsara@gmail.com
+          </p>
+        </div>
+
+        <div class="postcard-right">
+          <div class="postcard-actions">
+            <a href="mailto:kottawarsara@gmail.com" class="postcard-email-link">kottawarsara@gmail.com</a>
+            <button class="copy-email-nav" data-copy="kottawarsara@gmail.com">Copy Email Address</button>
+          </div>
+          <div class="postcard-socials">
+            <a href="https://github.com/pagoll-glitch" target="_blank" rel="noopener">GitHub ↗</a>
+            <a href="contact.html">Contact Me ↗</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Portfolio Core Engine -->
+  <script src="main.js"></script>
+</body>
+
+</html>
+
